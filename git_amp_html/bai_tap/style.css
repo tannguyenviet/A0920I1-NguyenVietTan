@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+}
+
+.sidebar{
+    background-color: #AAA;
+    padding-left: 40px;
+    width: 30%;
+}
+.inside_sidebar{
+    background: #CCC;
+    padding:35px 30px 40px 40px;
+    
+}
+.inside_sidebar img{
+    border: solid 5px white;
+    margin-bottom:  30px;
+}
+.contact{
+    margin-bottom: 50px;
+}
+.detail_contact{
+    margin-bottom: 20px;
+}
+.professional p {
+    margin-bottom: 10px;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1;
+    flex-grow: 1;
+    padding: 50px 180px 50px 30px;
+}
+.subtitle{
+    margin-top: 10px;
+    color: #AAA;
+}
+.profile{
+    margin-bottom: 30px;
+}
+.profile h3{
+    padding-bottom: 5px;
+    border-bottom: solid 4px #BBB  ;
+    
+}
+.title{
+    display:flex;
+}
+.script_byyear{
+    display: flex;
+    margin-top: 30px;
+}
+.script_byyear .year{
+    font-weight: 600;
+    width: 25%;
+    margin-right:50px;
+}
+
+.script_academic{
+    display: flex;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.script_academic .year{
+    width: 25%;
+}
+.script_academic .course{
+    width: 25%;
+}
+.script_academic .university{
+    display: flex;
+    flex-grow: 1;
+}
