@@ -1,0 +1,17 @@
+.form{
+    display:flex;
+    align-items: center;
+}
+.script{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.con{
+    
+    width: 115px;
+    height: 33px;
+}
+.result{
+    color: royalblue;
+}

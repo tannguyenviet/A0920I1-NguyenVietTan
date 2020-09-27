@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="amount script">
+            <div class="title"><h3>Amount</h3></div>
+            <div  class="input"><input  id="input_money"type="text"></div>
+        </div>
+        <div class="f_currency script">
+            <div class="title"><h3>From Currency</h3></div>
+            <select  name="" id="from_currency">
+                <option value="">VietNam</option>
+                <option value="">USD</option>
+                <option value="">Rupt</option>
+            </select>
+        </div>
+        <div class="t_currency script">
+            <div class="title"><h3>To Currency</h3></div>
+            <select name="" id="to_currency">
+                <option value="">VietNam</option>
+                <option value="">USD</option>
+                <option value="">Rupt</option>
+            </select>
+        </div>
+        <div class=" script">
+            <button class="con" onclick="convert()" id="button">Convert</button>
+
+        </div>
+        
+    </div>
+    <div id="result"></div>
+    <script src="./convert.js"></script>
+</body>
+</html>
