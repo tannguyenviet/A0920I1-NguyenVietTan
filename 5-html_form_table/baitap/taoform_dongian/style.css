@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+}
+.h1{
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    margin-bottom:  20px;
+}
+.row .title{
+    color:navy;
+    display: flex;
+    width: 10%;
+    padding-right: 23px;
+    justify-content: flex-end;
+}
+.options {
+    display: flex;
+    justify-content: center;
+}
+.options p{
+    color: orangered;
+    margin-left: 7px;
+    margin-right: 10px;
+}
+.options button{
+    margin-right: 15px;
+}

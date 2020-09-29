@@ -1,0 +1,46 @@
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 20px;
+    border: 4px solid #CCC;
+    text-align: center;
+    
+    
+}
+td sub{
+    font-size: 12px;
+}
+.day_tv{
+    border: none;
+}
+.day_tv th{
+    background-color: #FFB300;
+    color: white;
+    font-size: 20px;
+}
+.day_tv .cn{
+    background-color: red;
+}
+.day_tv .t7{
+    background: blue;
+}
+.day_ta td{
+    border: none;
+}
+.date td{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.t7{
+    color: darkblue;
+}
+.t7 sub{
+    color: black;
+}
+.cn{
+    color: red;
+}

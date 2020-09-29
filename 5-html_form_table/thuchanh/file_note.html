@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Form không được lồng nhau -->
+
+    <!-- input radio có chung name thì chỉ chọn 1 cái -->
+    <input type="radio" name="rd"/> 1 - $10 <br/>
+    <input type="radio" name="rd"/> 2 - $20 <br/>
+    <input type="radio" name="rd"/> 3 - $25 <br/>
+
+    <!-- input phải có name thì mới get hoặc post lên trang được -->
+    <form method="get" action="https://www.google.com.vn/search">
+        <input type="text" name="q" size="15">
+        <input type="submit" value="Tìm kiếm">
+    </form>
+</body>
+</html>
