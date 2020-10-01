@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const toNumber = (stringnum) => +stringnum;
+
+        function bai1() {
+            for (var i = 1; i < 100; i++) {
+                document.write(i + " ");
+                if (i == 99) {
+                    alert("Hoàn thành");
+                }
+            }
+        }
+
+        function bai2() {
+            temp = prompt("Nhập nhiệt độ");
+            if (toNumber(temp) > 100) {
+                alert("Giảm Nhiệt độ");
+            }
+            if (toNumber(temp) < 20) {
+                alert("Tăng nhiệt độ");
+            }
+        }
+
+        function bai4() {
+            var a1 = 1;
+            var a2 = 1;
+            var a3
+            for (var i = 1; i <= 50; i++) {
+                a3 = a1 + a2;
+                if(a3%5==0){
+                    alert(a3);
+                    break;
+                }
+                console.log(a3 + " ");
+                a1 = a2;
+                a2 = a3;
+            }
+        }
+        // bai4();
+        function bai7(){
+            for(var i=1;i<=100;i++){
+                if(i%3==0){
+                    if(i%5==0){
+                        document.write("FizzBuzz"+"&nbsp&nbsp");
+                    }
+                    else(document.write("Fizz"+"&nbsp&nbsp"));
+                }
+                else if(i%5==0){
+                    document.write("Buzz"+"&nbsp&nbsp");
+                }
+                else(document.write(i+"&nbsp&nbsp"));
+            }
+        }
+        bai7();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="input">
+        <input id="result" type="text">
+    </div>
+    <div> 
+        <input class="ip" onclick="result.value+=this.value" type="button" value="7">
+        <input class="ip" onclick="result.value+=this.value" type="button" value="8">
+        <input class="ip" onclick="result.value+=this.value" type="button" value="9">
+        <input class="ip "  onclick="sign(this.value)" type="button" value="x">
+    
+
+    </div>
+    <div> 
+        <input class="ip" onclick="result.value+=this.value" type="button" value="4">
+        <input class="ip" onclick="result.value+=this.value" type="button" value="5">
+        <input class="ip" onclick="result.value+=this.value" type="button" value="6">
+        <input class="ip " onclick="sign(this.value)" type="button" value="-">
+        
+    </div>
+    <div> 
+         <input class="ip" onclick="result.value+=this.value" type="button" value="1">
+         <input class="ip" onclick="result.value+=this.value" type="button" value="2">
+         <input class="ip" onclick="result.value+=this.value" type="button" value="3">
+         <input class="ip" onclick="sign(this.value)" type="button" value="+">
+    </div>      
+    <div> 
+        <input class="ip" onclick="result.value+=this.value" type="button" value="+/-">
+        <input class="ip" onclick="result.value+=this.value" type="button" value="0">
+        <input class="ip" onclick="result.value+=this.value" type="button" value=".">
+        <input class="ip" onclick="equal()" value="=" type="button">
+
+    </div>
+    <script src="./run.js"></script>
+</body>
+</html>

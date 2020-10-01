@@ -1,0 +1,13 @@
+
+.ip{
+    width: 65px;
+    height: 35px;
+    margin-left: 4px;
+    margin-bottom: 3px;
+}
+.input input{
+    width: 280px;
+    height: 45px;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
