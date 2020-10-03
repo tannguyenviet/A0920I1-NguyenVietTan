@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let check=1;
+        function isPalidrome(s){
+            if(s[s.length-1]==s[0]){
+                if(s.length<=2){ 
+                    return true;
+                    
+                }
+                    isPalidrome(s.substring(1,s.length-1));
+            }
+            else {
+                check=0;
+                
+            }
+            if (check==1) return true;
+            else return false
+        }
+        isPalidrome("12321");
+    </script>
+</body>
+</html>
