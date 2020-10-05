@@ -44,21 +44,34 @@
 
 
 //
-let screen="";
 let products=["Pen","Ruler","Book"];
-
-// Hiển thị danh sách sp
 function displayProduct(){
-    for (let i=0;i<products.length;i++){
-        screen+=products[i]+"<button onclick='editProduct("+i+")'>Edit</button>"+"<button onclick='deleteProduct()'>Delete</button><br>";
+    let temp="";
+    for (let i =0;i<products.length;i++){
+        temp = temp + "<label id='"+i+"'>"+ products[i] + "</label>"
+             + "<button id='hello' onclick='displayEditProduct(" +i+ ")'"+">Edit</button>" 
+             + "<button id='hello' onclick='deleteProduct(" +i+ ")'"+">Delete</button>" 
+             +"</br>"
     }
-    document.write(screen);
+    // Hiển thị danh sách sp
+    document.getElementById("listProduct").innerHTML=temp;  
+}
+function deleteProduct(index){
+    if (confirm("Bạn có chắc chắn xóa" + products[index] + " này không?")) {
+                products.splice(index, 1);
+            }
+    displayProduct();
 }
 function editProduct(index){
+    let newProduct = document.getElementById("product").value;
+    products[index]= newProduct;
+    displayProduct();
+}
+function displayEditProduct(index){
     let temp = "<h2> Edit Product </h2>" +
-            "<input type='text' value='" + products[index] +"' id='product'>" +
-            "<input type='button' value='Edit Product' onclick='editProduct("+ index +")'>";
-        displayProduct();
-        document.write(temp);
+        "<input type='text' value='" + products[index] +"' id='product'>" +
+        "<input type='button' value='Edit Product' onclick='editProduct("+ index +")'>";
+    document.getElementById("editProduct").innerHTML=temp;
 }
 displayProduct();
+
