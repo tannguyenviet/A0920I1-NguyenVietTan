@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/CleanCode_Refactoring/Bai_tap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/CleanCode_Refactoring/Bai_tap/java-cleancode-refactoring-exercise" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/CleanCode_Refactoring/Thuc_hanh/DefragmentValue" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/CleanCode_Refactoring/Thuc_hanh/DefragmentValue/java-cleancode-refactoring-renaming" vcs="Git" />
+  </component>
+</project>

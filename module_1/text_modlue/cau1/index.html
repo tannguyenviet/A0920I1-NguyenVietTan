@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>s
+</head>
+<body>
+    <script>
+        let lengthArr=0;
+        let arr = [];
+        let count=0;
+        let result=0;
+        do {
+            lengthArr = parseInt(prompt("Nhập số N phần tử của mảng: "));
+        } while (lengthArr <= 0 || isNaN(lengthArr));
+        // Nhập từng phần tử
+        for (let i=0;i<lengthArr;i++){
+            arr[i]= parseInt(prompt("Nhập số thứ " +i+": "));
+        }
+        // Tính trung bình cộng các số lẻ ở vị trí chẵn
+        for (let i=0;i<lengthArr;i++){
+            if(i%2==0 && arr[i]%2!=0){
+                console.log(arr[i]);
+                result+=arr[i];
+                count++;
+            }
+        
+        }
+        console.log(count);
+        alert("Kết quả sau khi thực hiện là: "+result/count);
+    </script>
+</body>
+</html>

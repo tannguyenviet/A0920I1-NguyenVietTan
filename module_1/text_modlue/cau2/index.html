@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = 0;
+        let sumUocSo1 = 0;
+        let num2 = 0;
+        let sumUocSo2 = 0;
+
+        // Nhập num1 
+        function inputDoubleNum() {
+            do {
+                num1 = parseInt(prompt("Nhập số thứ 1: "));
+            } while (num1 <= 0 || isNaN(num1));
+            // Nhập num2
+            do {
+                num2 = parseInt(prompt("Nhập số thứ 2: "));
+            } while (num2 <= 0 || isNaN(num2));
+        }
+
+
+        // xử lí bài toán
+        function checkDoubleNum() {
+            for (let i = 0; i <= num1 / 2; i++) {
+                if (num1 % i == 0) {
+                    sumUocSo1 += i;
+                    console.log(" "+i)
+                }
+            }
+            console.log("_________");
+            for (let i = 0; i <= num2 / 2; i++) {
+                if (num2 % i == 0) {
+                    sumUocSo2 += i;
+                }
+            }
+            if (sumUocSo1 === num2 && sumUocSo2 === num1) {
+                return true;
+            } else return false;
+
+        }
+        inputDoubleNum();
+        alert(checkDoubleNum(num1,num2));
+    </script>
+
+</body>
+
+</html>

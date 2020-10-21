@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <script>
+        let table = document.getElementById("table");
+        let content="";
+        for(let i=1;i<=9;i++){
+            content+="<tr>";
+            for(let j=2;j<=9;j++){
+
+                content+="<td>" +j + i + "</td>";
+            }
+            content+="</tr>";
+        }
+        table.innerHTML+=content;
+    </script>
+</body>
+</html>
