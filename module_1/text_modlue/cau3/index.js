@@ -31,7 +31,7 @@ function Book(mss, name, year, quantity) {
     }
 
 }
-le;
+arrBook=[];
 let content="";
 function displayarrBook(){
     let content="";
