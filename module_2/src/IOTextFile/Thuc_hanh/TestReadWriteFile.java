@@ -1,4 +1,4 @@
-package IOTextFile;
+package IOTextFile.Thuc_hanh;
 
 import java.io.*;
 
@@ -13,6 +13,7 @@ public class TestReadWriteFile {
             while ((line = reader.readLine())!=null){
                 System.out.println(line);
                 writer.write(line);
+                writer.newLine();
             }
             writer.close();
             reader.close();

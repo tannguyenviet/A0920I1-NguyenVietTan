@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8c81ff-0ceb-4386-8a6b-1adf4f909fc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ExceptionAndDebug/Thuc_Hanh/ArrayIndexOutofBoundsException/ArrayExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ExceptionAndDebug/Thuc_Hanh/ArrayIndexOutofBoundsException/TestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ExceptionAndDebug/Thuc_Hanh/NumberFormatException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOTextFile/TestReadWriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IOTextFile/filetest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JavaCollection_Framework/Bai_tap/TestTreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JavaCollection_Framework/Bai_tap/Tree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JavaCollection_Framework/Bai_tap/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JavaCollection_Framework/Thuc_hanh/Simpson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOTextFile/Thuc_hanh/FileNumber.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOTextFile/Thuc_hanh/ReadFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOTextFile/Thuc_hanh/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IOTextFile/Thuc_hanh/fileOutput.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threading/Bai_tap/Palidrome/LazyPrimeFactorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threading/Bai_tap/Palidrome/OptimizedPrimeFactorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threading/Thuc_hanh/TestSynchonizedThread/ShareData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threading/Thuc_hanh/TestSynchonizedThread/Thread1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threading/Thuc_hanh/TestSynchonizedThread/Thread2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threading/Thuc_hanh/TestSynchonizedThread/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threading/Thuc_hanh/TestSynchronized/CustomerThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threading/Thuc_hanh/TestSynchronized/ShareFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threading/Thuc_hanh/TestSynchronized/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module_1/17. Lập trình hướng đối tượng/codethamkhao/objects" beforeDir="false" afterPath="$PROJECT_DIR$/../module_1/17. Lập trình hướng đối tượng/codethamkhao/objects" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module_1/text_modlue/cau3/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../module_1/text_modlue/cau3/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/AbtracClass_Interface/Thuc_hanh/InterfaceComparableOfShape/ComparableCircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/AbtracClass_Interface/Thuc_hanh/InterfaceComparableOfShape/ComparableCircleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbtracClass_Interface/Thuc_hanh/InterfaceComparableOfShape/ComparableCircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbtracClass_Interface/Thuc_hanh/InterfaceComparableOfShape/ComparableCircleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaCollection_Framework/Thuc_hanh/TestAllKindMap/TestMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaCollection_Framework/Thuc_hanh/TestAllKindMap/TestMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/IOTextFile/TestReadWriteFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/IOTextFile/filetest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IOTextFile/TestReadWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IOTextFile/Thuc_hanh/TestReadWriteFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IOTextFile/fileOutput.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IOTextFile/filetest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/IOTextFile/Thuc_hanh/filetest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,14 +66,17 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Inheritance.Thuc_hanh" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\VITA\CodeGym\A0920I1\A0920I1-NguyenVietTan\module_2\src\IOTextFile\Thuc_hanh" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.TestReadWriteFile">
-    <configuration name="NumberFormatException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExceptionAndDebug.Thuc_Hanh.NumberFormatException" />
+  <component name="RunManager" selected="Application.main (2)">
+    <configuration name="ReadFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IOTextFile.Thuc_hanh.ReadFile" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ExceptionAndDebug.Thuc_Hanh.*" />
+          <option name="PATTERN" value="IOTextFile.Thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExceptionAndDebug.Thuc_Hanh.ArrayIndexOutofBoundsException.TestException" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IOTextFile.Thuc_hanh.Test" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ExceptionAndDebug.Thuc_Hanh.ArrayIndexOutofBoundsException.*" />
+          <option name="PATTERN" value="IOTextFile.Thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestReadWriteFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOTextFile.TestReadWriteFile" />
+    <configuration name="main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Threading.Thuc_hanh.TestSynchonizedThread.main" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOTextFile.*" />
+          <option name="PATTERN" value="Threading.Thuc_hanh.TestSynchonizedThread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTnterface1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaCollection_Framework.Bai_tap.TestTnterface1" />
+    <configuration name="main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Threading.Bai_tap.Palidrome.main" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaCollection_Framework.Bai_tap.*" />
+          <option name="PATTERN" value="Threading.Bai_tap.Palidrome.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTreeNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaCollection_Framework.Bai_tap.TestTreeNode" />
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Threading.Thuc_hanh.TestSynchronized.main" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaCollection_Framework.Bai_tap.*" />
+          <option name="PATTERN" value="Threading.Thuc_hanh.TestSynchronized.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestReadWriteFile" />
-        <item itemvalue="Application.NumberFormatException" />
-        <item itemvalue="Application.TestException" />
-        <item itemvalue="Application.TestTnterface1" />
-        <item itemvalue="Application.TestTreeNode" />
+        <item itemvalue="Application.main (2)" />
+        <item itemvalue="Application.main (1)" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ReadFile" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +171,8 @@
       <workItem from="1603345397638" duration="681000" />
       <workItem from="1603418506766" duration="3113000" />
       <workItem from="1603449634069" duration="8215000" />
-      <workItem from="1603532225858" duration="7959000" />
+      <workItem from="1603532225858" duration="10473000" />
+      <workItem from="1603688768316" duration="11703000" />
     </task>
     <servers />
   </component>
@@ -175,30 +184,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="72" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1603674892040" />
-    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1603456653880">
+    <state x="523" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603679952865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603456653880" />
+    <state x="523" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603679952865" />
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1603864635140">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603864635140" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1602732503954">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602732503954" />
-    <state width="1493" height="109" key="GridCell.Tab.0.bottom" timestamp="1603679447153">
+    <state width="1493" height="365" key="GridCell.Tab.0.bottom" timestamp="1603865230162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="109" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603679447153" />
-    <state width="1493" height="109" key="GridCell.Tab.0.center" timestamp="1603679447153">
+    <state width="1493" height="365" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603865230162" />
+    <state width="1493" height="365" key="GridCell.Tab.0.center" timestamp="1603865230162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="109" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603679447153" />
-    <state width="1493" height="109" key="GridCell.Tab.0.left" timestamp="1603679447153">
+    <state width="1493" height="365" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603865230162" />
+    <state width="1493" height="365" key="GridCell.Tab.0.left" timestamp="1603865230162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="109" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603679447153" />
-    <state width="1493" height="109" key="GridCell.Tab.0.right" timestamp="1603679447153">
+    <state width="1493" height="365" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603865230162" />
+    <state width="1493" height="365" key="GridCell.Tab.0.right" timestamp="1603865230162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="109" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603679447153" />
+    <state width="1493" height="365" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603865230162" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1603115167351">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -219,10 +232,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="293" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602677395033" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1603532232175">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1603688786862">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603532232175" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603688786862" />
     <state x="376" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602567426663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
