@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="874bd20b-f8b0-4b0a-b2bd-d6429233f0ac" name="Default Changelist" comment="" />
+    <list default="true" id="874bd20b-f8b0-4b0a-b2bd-d6429233f0ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/BO/B_Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/BO/B_Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/BO/impl/BImpl_Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/BO/impl/BImpl_Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/Controller/C_Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/Controller/C_Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/DAO/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/Entity/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/Entity/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/FileData/Car.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/BaiTapAnhHai/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/CaseStudy/Control/C_Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/CaseStudy/Json_Data/car.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/CaseStudy/Json_Data/truck.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/CaseStudy/Main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/CaseStudy/Model/BO/M_Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/CaseStudy/Model/Entity/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/CaseStudy/Model/Entity/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/CaseStudy/Model/Entity/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/CaseStudy/Model/Entity/Trucke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/CaseStudy/Model/Entity/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/String_Regex/CrawlListMagazineTitle/ListMagazineTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/String_Regex/ValidatePhoneNumber/ValidatePhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/String_Regex/Validate_Email/CrawlListSong/CrawlSongExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/String_Regex/Validate_Email/ValidNameClass/ValidClassName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/String_Regex/Validate_Email/ValidateEmail/EmailExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_2/src/String_Regex/Validate_Email/ValidateEmail/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17. Lập trình hướng đối tượng/codethamkhao/objects" beforeDir="false" afterPath="$PROJECT_DIR$/17. Lập trình hướng đối tượng/codethamkhao/objects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17. Lập trình hướng đối tượng/codethamkhao/objects/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/17. Lập trình hướng đối tượng/codethamkhao/objects/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/module_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/module_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/out/production/module_2/IOTextFile/Thuc_hanh/TestReadWriteFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/out/production/module_2/IOTextFile/Thuc_hanh/TestReadWriteFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/out/production/module_2/IOTextFile/Thuc_hanh/fileOutput.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/src/IOTextFile/Thuc_hanh/TestReadWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/src/IOTextFile/Thuc_hanh/TestReadWriteFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/src/IOTextFile/Thuc_hanh/fileOutput.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +47,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hp5YxnreL4GEhPEFu91F4cJQaf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -19,6 +56,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -34,10 +79,18 @@
       <workItem from="1600695849518" duration="198000" />
       <workItem from="1600696109303" duration="669000" />
       <workItem from="1600920003139" duration="31000" />
+      <workItem from="1605532686773" duration="1072000" />
+      <workItem from="1605707402583" duration="416000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1605532714722">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605532714722" />
   </component>
 </project>

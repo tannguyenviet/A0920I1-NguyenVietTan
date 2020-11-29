@@ -5,7 +5,7 @@ import java.io.*;
 public class TestReadWriteFile {
     public static void main(String[] args)  {
         try{
-            FileReader fileReader = new FileReader("./src/IOTextFile/filetest.txt");
+            FileReader fileReader = new FileReader("./src/IOTextFile/Thuc_hanh/filetest.txt");
             BufferedReader reader = new BufferedReader(fileReader);
             String line =null;
             BufferedWriter writer = new BufferedWriter(new FileWriter("./src/IOTextFile/fileOutput.txt"));
@@ -21,6 +21,7 @@ public class TestReadWriteFile {
        catch (IOException e){
            System.err.println("Không mở được file");
        }
+
 
     }
 }
