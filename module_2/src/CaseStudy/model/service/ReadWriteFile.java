@@ -18,8 +18,8 @@ public class ReadWriteFile {
     public void writeFile(String path,String data) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(path,true));
         System.out.println(data);
-        writer.newLine();
         writer.write(data);
+        writer.newLine();
         writer.close();
     }
 }

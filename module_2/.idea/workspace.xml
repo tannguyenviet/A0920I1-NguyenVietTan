@@ -2,197 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8c81ff-0ceb-4386-8a6b-1adf4f909fc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/B13_thuat_toan_tim_kiem/Bai_tap/Option/FindMaxStringContinuous.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B13_thuat_toan_tim_kiem/Bai_tap/Tim_chuoi_dodai_lonnhat/FindMaxString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B13_thuat_toan_tim_kiem/Thuc_hanh/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B14_thuat_toan_sap_xep/Thuc_hanh/Sapxep_noibot/BubbleSortByStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Bai_tap/InterfaceColorable/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Bai_tap/InterfaceColorable/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Thuc_hanh/InterfaceComparableOfShape/ComparableCircleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/common/Regex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/common/UserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/Customer.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/House.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/Room.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/data/Villa.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/model/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/model/entity/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/model/entity/Services.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/model/entity/Villa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/model/service/ReadWriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/model/service/VillaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module_2_demo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CaseStudy/model/service/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module_1/17. Lập trình hướng đối tượng/codethamkhao/objects" beforeDir="false" afterPath="$PROJECT_DIR$/../module_1/17. Lập trình hướng đối tượng/codethamkhao/objects" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/AbtracClass_Interface/Bai_tap/InterfaceResizeable/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/AbtracClass_Interface/Bai_tap/InterfaceResizeable/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/AbtracClass_Interface/Bai_tap/InterfaceResizeable/Resizeable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/AbtracClass_Interface/Bai_tap/InterfaceResizeable/Square.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/AbtracClass_Interface/Thuc_hanh/InterfaceComparableOfShape/ComparableCircle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/AbtracClass_Interface/Thuc_hanh/InterfaceComparableOfShape/ComparableCircleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/AcessModifier/Bai_tap/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/AcessModifier/Bai_tap/TestCircle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/BaiTapAnhHai/Controller/C_Truck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/BaiTapAnhHai/Controller/C_Truck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/BaiTapAnhHai/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/BaiTapAnhHai/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Control/C_Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Json_Data/car.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Json_Data/truck.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Model/BO/M_Vehicle$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Model/BO/M_Vehicle$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Model/BO/M_Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Model/Entity/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Model/Entity/Data.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Model/Entity/File.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Model/Entity/Trucke.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/Model/Entity/Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/DSA/Bai_tap/LinkerList/MyLinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/DSA/Bai_tap/LinkerList/MyLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/DSA/Bai_tap/MyList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/DSA/Bai_tap/MyListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/DSA/Thuc_hanh/BasicLinkedList/MyLinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/DSA/Thuc_hanh/BasicLinkedList/MyLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/DSA/Thuc_hanh/BasicLinkedList/MyLinkedListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/DSA/Thuc_hanh/BasicList/MyList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/DSA/Thuc_hanh/BasicList/MyListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/ExceptionAndDebug/Thuc_Hanh/ArrayIndexOutofBoundsException/ArrayExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/ExceptionAndDebug/Thuc_Hanh/ArrayIndexOutofBoundsException/TestException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/ExceptionAndDebug/Thuc_Hanh/NumberFormatException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/IOTextFile/Bai_tap/FileCountry.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/IOTextFile/Bai_tap/ReaderCountry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/IOTextFile/Thuc_hanh/FileNumber.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/IOTextFile/Thuc_hanh/ReadFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/IOTextFile/Thuc_hanh/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/IOTextFile/Thuc_hanh/TestReadWriteFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/IOTextFile/Thuc_hanh/filetest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/IOTextFile/fileOutput.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Inheritance/Thuc_hanh/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/Inheritance/Thuc_hanh/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/JavaCollection_Framework/Bai_tap/Printable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/JavaCollection_Framework/Bai_tap/Showable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/JavaCollection_Framework/Bai_tap/SortBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/JavaCollection_Framework/Bai_tap/TestTnterface1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/JavaCollection_Framework/Bai_tap/TestTreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/JavaCollection_Framework/Bai_tap/Tree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/JavaCollection_Framework/Bai_tap/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/JavaCollection_Framework/Thuc_hanh/DistinguishHasMapAndHasSet/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/JavaCollection_Framework/Thuc_hanh/DistinguishHasMapAndHasSet/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/JavaCollection_Framework/Thuc_hanh/TestAllKindMap/TestMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Lop_DoiTuong/Thuc_hanh/QuadraticEquation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Lop_DoiTuong/Thuc_hanh/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Lop_DoiTuong/Thuc_hanh/StopWatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Lop_DoiTuong/Thuc_hanh/runEx.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Mang_phuongthuc2/Bai_tap/countCharacterInString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Mang_phuongthuc2/Bai_tap/deleteComponentOfArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Mang_phuongthuc2/Bai_tap/insertCoponentOfArr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Mang_phuongthuc2/Bai_tap/mergeArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Mang_phuongthuc2/Bai_tap/sumColumnMatrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Mang_phuongthuc2/Bai_tap/sumMainCross.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Mang_phuongthuc2/Thuc_hanh/countStudentPass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Mang_phuongthuc2/Thuc_hanh/reverseArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Nhap_mon_lap_trinh/Bai_tap/changeCurrency.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Nhap_mon_lap_trinh/Bai_tap/displayHello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Nhap_mon_lap_trinh/Bai_tap/readNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Nhap_mon_lap_trinh/Thuc_hanh/designMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Nhap_mon_lap_trinh/Thuc_hanh/displaySystemTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Bai_tap/CheckBracket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Bai_tap/CircleLinkedList/CircleLinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Bai_tap/CircleLinkedList/CircleLinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Bai_tap/CircleLinkedList/CircleLinkedListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Bai_tap/DemergingQueue/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Bai_tap/DemergingQueue/TestDemergingQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Bai_tap/Map/Map$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Bai_tap/Map/Map.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Bai_tap/Map/MapTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Bai_tap/ReveseArrayByStack/reverseArrayByStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Thuc_hanh/BasicQuece/MyLinkedListQuece$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Thuc_hanh/BasicQuece/MyLinkedListQuece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Thuc_hanh/BasicQuece/TestQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Thuc_hanh/BasicStack/MyGenericStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Stack_Quece/Thuc_hanh/BasicStack/TestStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/String_Regex/CrawlListMagazineTitle/ListMagazineTitle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/String_Regex/ValidatePhoneNumber/ValidatePhoneNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/String_Regex/Validate_Email/CrawlListSong/CrawlSongExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/String_Regex/Validate_Email/ValidateEmail/EmailExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/String_Regex/Validate_Email/ValidateEmail/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/SystemTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Bai_tap/NumberGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Bai_tap/Palidrome/LazyPrimeFactorization.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Bai_tap/Palidrome/OptimizedPrimeFactorization.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Bai_tap/Palidrome/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Thuc_hanh/TestSynchonizedThread/ShareData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Thuc_hanh/TestSynchonizedThread/Thread1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Thuc_hanh/TestSynchonizedThread/Thread2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Thuc_hanh/TestSynchonizedThread/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Thuc_hanh/TestSynchronized/CustomerThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Thuc_hanh/TestSynchronized/ShareFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Threading/Thuc_hanh/TestSynchronized/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Vong_lap_java/Bai_tap/displayPrime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Vong_lap_java/Bai_tap/displayPrimeSmall100.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Vong_lap_java/Bai_tap/displayShape.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/Vong_lap_java/Bai_tap/kiemtra_nguyento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/com/company/BO/CarBO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/com/company/BO/impl/CarBOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/com/company/DAO/CarDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/com/company/DAO/impl/CarDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/com/company/controller/CarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/com/company/entity/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/test/NhanVien.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/test/TruongPhong.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/test/run.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B10_dsa/Bai_tap/MyListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B10_dsa/Bai_tap/MyListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B10_dsa/Thuc_hanh/BasicLinkedList/MyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B10_dsa/Thuc_hanh/BasicLinkedList/MyLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B16_io_text_file/Thuc_hanh/TestReadWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B16_io_text_file/Thuc_hanh/TestReadWriteFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B16_io_text_file/fileOutput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/B16_io_text_file/fileOutput.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B19_string_regex/CrawlListMagazineTitle/ListMagazineTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B19_string_regex/CrawlListMagazineTitle/ListMagazineTitle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B1_Introduction_java/Bai_tap/changeCurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B1_Introduction_java/Bai_tap/changeCurrency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B3_mang_phuongthuc/Bai_tap/insertCoponentOfArr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B3_mang_phuongthuc/Bai_tap/insertCoponentOfArr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B4_lop_doituong/Thuc_hanh/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B4_lop_doituong/Bai_tap/QuadraticEquation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B4_lop_doituong/Thuc_hanh/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B4_lop_doituong/Bai_tap/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B4_lop_doituong/Thuc_hanh/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B4_lop_doituong/Bai_tap/StopWatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B4_lop_doituong/Thuc_hanh/runEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B4_lop_doituong/Bai_tap/runEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Bai_tap/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Bai_tap/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Bai_tap/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Bai_tap/Cylinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Bai_tap/MovablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Bai_tap/MovablePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Bai_tap/Point_2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Bai_tap/Point_2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Bai_tap/Point_3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Bai_tap/Point_3D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Bai_tap/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Bai_tap/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Bai_tap/runPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Bai_tap/runPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Thuc_hanh/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Thuc_hanh/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Thuc_hanh/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Thuc_hanh/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Thuc_hanh/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Thuc_hanh/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B6_inheritance/Thuc_hanh/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inheritance/Thuc_hanh/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Bai_tap/InterfaceResizeable/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Bai_tap/InterfaceResizeable/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Bai_tap/InterfaceResizeable/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Bai_tap/InterfaceResizeable/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Bai_tap/InterfaceResizeable/Resizeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Bai_tap/InterfaceResizeable/Resizeable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Bai_tap/InterfaceResizeable/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Bai_tap/InterfaceResizeable/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Thuc_hanh/Animal_Edibal/AbstractAndInterfaceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Thuc_hanh/Animal_Edibal/AbstractAndInterfaceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Thuc_hanh/Animal_Edibal/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Thuc_hanh/Animal_Edibal/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Thuc_hanh/Animal_Edibal/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Thuc_hanh/Animal_Edibal/Apple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Thuc_hanh/Animal_Edibal/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Thuc_hanh/Animal_Edibal/Chicken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Thuc_hanh/Animal_Edibal/Edible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Thuc_hanh/Animal_Edibal/Edible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Thuc_hanh/Animal_Edibal/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Thuc_hanh/Animal_Edibal/Fruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Thuc_hanh/Animal_Edibal/Orange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Thuc_hanh/Animal_Edibal/Orange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Thuc_hanh/Animal_Edibal/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Thuc_hanh/Animal_Edibal/Tiger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Thuc_hanh/InterfaceComparableOfShape/ComparableCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/B7_abtract_class_interfacee/Thuc_hanh/InterfaceComparableOfShape/ComparableCircle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/B7_abtract_class_interface/Thuc_hanh/InterfaceComparableOfShape/ComparableCircleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Control/C_Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Json_Data/car.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Json_Data/truck.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Model/BO/M_Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Model/Entity/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Model/Entity/Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Model/Entity/File.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Model/Entity/Trucke.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/Model/Entity/Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyHai/BO/CarBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyHai/BO/impl/CarBOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyHai/DAO/CarDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyHai/DAO/impl/CarDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyHai/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyHai/controller/CarController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudyHai/entity/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/CaseStudy/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/data/Customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/CaseStudy/data/Customer.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/model/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/CaseStudy/model/entity/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/model/service/ReadWriteFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/CaseStudy/model/service/ReadWriteFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/common/UserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/common/UserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/data/Customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/data/Customer.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/model/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/model/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/model/service/ReadWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/model/service/ReadWriteFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2_demo/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -396,7 +218,7 @@
       <workItem from="1607392205626" duration="925000" />
       <workItem from="1607394342467" duration="25281000" />
       <workItem from="1607479848711" duration="4365000" />
-      <workItem from="1607511453436" duration="505000" />
+      <workItem from="1607511453436" duration="10752000" />
     </task>
     <servers />
   </component>
@@ -412,10 +234,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603679952865" />
-    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1607511924534">
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1607520176833">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607511924534" />
+    <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607520176833" />
     <state x="499" y="189" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1605527174417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -428,42 +250,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1605527097039" />
+    <state x="512" y="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1607516062310">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="512" y="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1607516062310" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1606916462178">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606916462178" />
-    <state width="1493" height="227" key="GridCell.Tab.0.bottom" timestamp="1607448950190">
+    <state width="1493" height="317" key="GridCell.Tab.0.bottom" timestamp="1607522172207">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607448950190" />
-    <state width="1493" height="227" key="GridCell.Tab.0.center" timestamp="1607448950188">
+    <state width="1493" height="317" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607522172207" />
+    <state width="1493" height="317" key="GridCell.Tab.0.center" timestamp="1607522172206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607448950188" />
-    <state width="1493" height="227" key="GridCell.Tab.0.left" timestamp="1607448950188">
+    <state width="1493" height="317" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607522172206" />
+    <state width="1493" height="317" key="GridCell.Tab.0.left" timestamp="1607522172206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607448950188" />
-    <state width="1493" height="227" key="GridCell.Tab.0.right" timestamp="1607448950190">
+    <state width="1493" height="317" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607522172206" />
+    <state width="1493" height="317" key="GridCell.Tab.0.right" timestamp="1607522172206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="227" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607448950190" />
-    <state width="1493" height="319" key="GridCell.Tab.1.bottom" timestamp="1607350896456">
+    <state width="1493" height="317" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607522172206" />
+    <state width="1493" height="317" key="GridCell.Tab.1.bottom" timestamp="1607522172205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="319" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607350896456" />
-    <state width="1493" height="319" key="GridCell.Tab.1.center" timestamp="1607350896456">
+    <state width="1493" height="317" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607522172205" />
+    <state width="1493" height="317" key="GridCell.Tab.1.center" timestamp="1607522172205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="319" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607350896456" />
-    <state width="1493" height="319" key="GridCell.Tab.1.left" timestamp="1607350896455">
+    <state width="1493" height="317" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607522172205" />
+    <state width="1493" height="317" key="GridCell.Tab.1.left" timestamp="1607522172205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="319" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607350896455" />
-    <state width="1493" height="319" key="GridCell.Tab.1.right" timestamp="1607350896456">
+    <state width="1493" height="317" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607522172205" />
+    <state width="1493" height="317" key="GridCell.Tab.1.right" timestamp="1607522172205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="319" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607350896456" />
+    <state width="1493" height="317" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607522172205" />
     <state x="293" y="0" key="SettingsEditor" timestamp="1607392409598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -593,6 +419,11 @@
           <line>27</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CaseStudy/controller/MainController.java</url>
+          <line>357</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/B11_stack_quece/Thuc_hanh/BasicQuece/MyLinkedListQuece.java</url>
           <line>7</line>
@@ -607,6 +438,7 @@
       <configuration name="Application">
         <watch expression="m.group(1)" language="JAVA" />
         <watch expression="m.group(1)" language="JAVA" />
+        <watch expression="Integer.parseInt(birthday.substring(6, 9))" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

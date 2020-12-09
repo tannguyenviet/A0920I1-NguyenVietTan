@@ -7,8 +7,9 @@ import java.util.regex.Pattern;
 public class UserException {
     private static final String NAME_REGEX ="^([A-Z][a-z]+ )*";
     private static final String EMAIL_REGEX =   "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
-    private static final String ID_CARD_REGEX = "^\\d{3} \\d{3} \\d{3}$";
+    private static final String ID_CARD_REGEX = "^\\d{3}\\s\\d{3}\\s\\d{3}$";
     private static final String DATE_BIRTH_REGEX ="^\\d{2}\\/\\d{2}\\/\\d{4}$";
+    private static final String PHONE_REGEX ="\\d*";
 
     private static Pattern pattern;
     private Matcher matcher;
@@ -19,7 +20,7 @@ public class UserException {
         return matcher.matches();
     };
     public boolean validMail(String mail){
-        pattern = Pattern.compile(NAME_REGEX);
+        pattern = Pattern.compile(EMAIL_REGEX);
         matcher=pattern.matcher(mail);
         return matcher.matches();
     };
@@ -38,19 +39,25 @@ public class UserException {
         }
     }
     public boolean validIdCard(String idCard){
-        pattern = Pattern.compile(NAME_REGEX);
+        pattern = Pattern.compile(ID_CARD_REGEX);
         matcher=pattern.matcher(idCard);
         return matcher.matches();
 
     }
     public boolean validBirthday(String birthday){
-        pattern = Pattern.compile(NAME_REGEX);
+        pattern = Pattern.compile(DATE_BIRTH_REGEX);
         matcher=pattern.matcher(birthday);
         if(!matcher.matches()){
             return false;
         }else{
             int year = Calendar.getInstance().get(Calendar.YEAR);
-            return (year - Integer.parseInt(birthday.substring(6, 9)) > 18 &&Integer.parseInt(birthday.substring(6, 9))>1900);
+            return (year - Integer.parseInt(birthday.substring(6, 10)) > 18 &&Integer.parseInt(birthday.substring(6, 10))>1900);
         }
     }
+    public boolean validPhoneNumber(String phone){
+        pattern = Pattern.compile(PHONE_REGEX);
+        matcher=pattern.matcher(phone);
+        return matcher.matches();
+    }
+
 }

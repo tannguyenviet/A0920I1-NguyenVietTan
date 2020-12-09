@@ -9,9 +9,9 @@ public class Customer {
     private String email;
     private String typeCustomer;
     private String address;
-    private Services services;
+    private String services;
 
-    public Customer(String name, String dateOfBirth, String gender, String identityCard, String phoneNumber, String email, String typeCustomer, String address, Services services) {
+    public Customer(String name, String dateOfBirth, String gender, String identityCard, String phoneNumber, String email, String typeCustomer, String address, String services) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.gender = gender;
@@ -87,15 +87,22 @@ public class Customer {
         this.address = address;
     }
 
-    public Services getServices() {
+    public String getServices() {
         return services;
     }
 
-    public void setServices(Services services) {
+    public void setServices(String services) {
         this.services = services;
     }
 
-    private void showInfo(){
-        System.out.println(this.name+" "+this.dateOfBirth+" "+this.gender+" "+this.identityCard+" "+this.phoneNumber+" "+this.typeCustomer);
+    public void showInfo(){
+        System.out.println(this.name+" "+this.dateOfBirth+" "+this.gender+" "+this.identityCard+" "+this.phoneNumber+" "+this.email+" "+this.typeCustomer+" "+this.address);
+    }
+    public String getInfo(){
+       return (this.name+" "+this.dateOfBirth+" "+this.gender+" "+this.identityCard+" "+this.phoneNumber+" "+this.email+" "+this.typeCustomer+" "+this.address);
+    }
+    @Override
+    public String toString(){
+       return (this.name+","+this.dateOfBirth+","+this.gender+","+this.identityCard+","+this.phoneNumber+","+this.email+","+this.typeCustomer+","+this.address);
     }
 }
