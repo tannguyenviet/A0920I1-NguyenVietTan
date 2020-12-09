@@ -5,10 +5,10 @@ import java.io.*;
 public class TestReadWriteFile {
     public static void main(String[] args)  {
         try{
-            FileReader fileReader = new FileReader("./src/IOTextFile/Thuc_hanh/filetest.txt");
+            FileReader fileReader = new FileReader("./src/B16_io_text_file/fileOutputt.txt");
             BufferedReader reader = new BufferedReader(fileReader);
             String line =null;
-            BufferedWriter writer = new BufferedWriter(new FileWriter("./src/IOTextFile/fileOutput.txt"));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("./src/B16_io_text_file/fileOutput.txt"));
 
             while ((line = reader.readLine())!=null){
                 System.out.println(line);

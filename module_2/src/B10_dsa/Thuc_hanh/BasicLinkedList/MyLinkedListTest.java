@@ -1,8 +1,8 @@
 package B10_dsa.Thuc_hanh.BasicLinkedList;
 
-import B6_inheritance.Thuc_hanh.Circle;
-import B6_inheritance.Thuc_hanh.Rectangle;
-import B6_inheritance.Thuc_hanh.Square;
+import Inheritance.Thuc_hanh.Circle;
+import Inheritance.Thuc_hanh.Rectangle;
+import Inheritance.Thuc_hanh.Square;
 
 public class MyLinkedListTest  {
     public static void main(String[] args) {

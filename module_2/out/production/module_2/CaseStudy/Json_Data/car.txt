@@ -1,7 +1,0 @@
-[
-    {"seatAmount":3,"hasSpareWheel":3,"color":"Red","id":"1254","weight":590,"cubic":2000},
-    {"seatAmount":2,"hasSpareWheel":3,"color":"Green","id":"1258","weight":340,"cubic":2000},
-    {"seatAmount":1,"hasSpareWheel":3,"color":"Blue","id":"1257","weight":200,"cubic":2000},
-    {"seatAmount":6,"hasSpareWheel":3,"color":"Purple","id":"1255","weight":1234,"cubic":2000},
-    {"seatAmount":4,"hasSpareWheel":3,"color":"Pink","id":"1254","weight":1234,"cubic":2000}
-]

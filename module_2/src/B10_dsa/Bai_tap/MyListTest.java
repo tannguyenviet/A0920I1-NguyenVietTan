@@ -1,6 +1,6 @@
 package B10_dsa.Bai_tap;
 
-import B6_inheritance.Thuc_hanh.Rectangle;
+import Inheritance.Thuc_hanh.Rectangle;
 
 public class MyListTest {
     public static void main(String[] args) {

@@ -29,6 +29,7 @@ public class insertCoponentOfArr {
             array[size]=array[size-1];
             right--;
         }
+
         array[index]=insValue;
         System.out.printf("%-20s%s", "Elements in array: ", "");
         for (int j = 0; j < size+1; j++) {

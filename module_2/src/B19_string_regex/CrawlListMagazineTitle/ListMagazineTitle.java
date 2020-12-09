@@ -13,13 +13,17 @@ public class ListMagazineTitle {
         URL url;
         {
             try {
-                url = new URL( "https://dantri.com.vn/the-gioi.htm");
+                url = new URL( "https://soundcloud.com/discover");
                 Scanner scanner = new Scanner(new InputStreamReader(url.openStream()));
                 scanner.useDelimiter("\\Z");
                 String content = scanner.next();
-                content = content.replaceAll("\\n+", "");
+//                content = content.replaceAll("\\n+", "");
+                System.out.println(content);
 //                content = content.replaceAll("\\s","");
-                Pattern p = Pattern.compile("<a\\s*data-utm=\".*\\s*title=\".*\">\\s*(.*?)\\s*</a>");
+//                Pattern p = Pattern.compile("<a data-utm=\"Cate.+\">(.*?)</a>");
+                Pattern p = Pattern.compile("<span.*aria-label=\"Related tracks:(.*?).*aria-role=.*span>");
+//                Pattern p = Pattern.compile("<div class=\"board-tile-details is-badged.* title=\"(.*?)\\\" dir=\"auto\"");
+
 //                news-item__avatar\".*\">
                 Matcher m = p.matcher(content);
                 while (m.find()) {

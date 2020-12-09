@@ -1,7 +1,0 @@
-[
-    {"stock":4,"limitWeight":352,"color":"Red","id":"1251","weight":1234,"cubic":2000},
-    {"stock":4,"limitWeight":324,"color":"Red","id":"1251","weight":1234,"cubic":2000},
-    {"stock":4,"limitWeight":324,"color":"Red","id":"1251","weight":1234,"cubic":2000},
-    {"stock":4,"limitWeight":350,"color":"Red","id":"1251","weight":1234,"cubic":2000},
-    {"stock":4,"limitWeight":325,"color":"Red","id":"1251","weight":1234,"cubic":2000}
-]
