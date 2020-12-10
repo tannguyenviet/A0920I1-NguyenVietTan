@@ -59,5 +59,8 @@ public class Villa extends Services {
     public String toString(){
         return this.getId()+","+this.getName()+","+this.getAreaUsed()+","+this.getRentCost()+","+this.getMaxPeople()+","+this.getTypeRent()+","+this.standardRoom+","+this.detailConvenient+","+this.arePool+","+this.floor;
     }
+    public String getInfo(){
+        return (this.getId()+","+this.getName()+","+this.getAreaUsed()+","+this.getRentCost()+","+this.getMaxPeople()+","+this.getTypeRent()+","+this.standardRoom+","+this.detailConvenient+","+this.arePool+","+this.floor);
 
+    }
 }

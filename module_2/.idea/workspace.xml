@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8c81ff-0ceb-4386-8a6b-1adf4f909fc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CaseStudy/model/service/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module_1/17. Lập trình hướng đối tượng/codethamkhao/objects" beforeDir="false" afterPath="$PROJECT_DIR$/../module_1/17. Lập trình hướng đối tượng/codethamkhao/objects" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/CaseStudy/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/data/Customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/CaseStudy/data/Customer.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/model/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/CaseStudy/model/entity/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/CaseStudy/model/service/ReadWriteFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/CaseStudy/model/service/ReadWriteFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/common/UserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/common/UserException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CaseStudy/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/data/Customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/data/Customer.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/model/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/model/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CaseStudy/model/service/ReadWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/model/service/ReadWriteFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/data/Villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/model/entity/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/model/entity/Villa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaseStudy/model/service/VillaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaseStudy/model/service/VillaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module_2_demo/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +212,8 @@
       <workItem from="1607392205626" duration="925000" />
       <workItem from="1607394342467" duration="25281000" />
       <workItem from="1607479848711" duration="4365000" />
-      <workItem from="1607511453436" duration="10752000" />
+      <workItem from="1607511453436" duration="11618000" />
+      <workItem from="1607572947261" duration="3425000" />
     </task>
     <servers />
   </component>
@@ -258,38 +253,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606916462178" />
-    <state width="1493" height="317" key="GridCell.Tab.0.bottom" timestamp="1607522172207">
+    <state width="1493" height="182" key="GridCell.Tab.0.bottom" timestamp="1607581342636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="317" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607522172207" />
-    <state width="1493" height="317" key="GridCell.Tab.0.center" timestamp="1607522172206">
+    <state width="1493" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607581342636" />
+    <state width="1493" height="182" key="GridCell.Tab.0.center" timestamp="1607581342635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="317" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607522172206" />
-    <state width="1493" height="317" key="GridCell.Tab.0.left" timestamp="1607522172206">
+    <state width="1493" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607581342635" />
+    <state width="1493" height="182" key="GridCell.Tab.0.left" timestamp="1607581342634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="317" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607522172206" />
-    <state width="1493" height="317" key="GridCell.Tab.0.right" timestamp="1607522172206">
+    <state width="1493" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607581342634" />
+    <state width="1493" height="182" key="GridCell.Tab.0.right" timestamp="1607581342635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="317" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607522172206" />
-    <state width="1493" height="317" key="GridCell.Tab.1.bottom" timestamp="1607522172205">
+    <state width="1493" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607581342635" />
+    <state width="1493" height="317" key="GridCell.Tab.1.bottom" timestamp="1607523168825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="317" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607522172205" />
-    <state width="1493" height="317" key="GridCell.Tab.1.center" timestamp="1607522172205">
+    <state width="1493" height="317" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607523168825" />
+    <state width="1493" height="317" key="GridCell.Tab.1.center" timestamp="1607523168825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="317" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607522172205" />
-    <state width="1493" height="317" key="GridCell.Tab.1.left" timestamp="1607522172205">
+    <state width="1493" height="317" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607523168825" />
+    <state width="1493" height="317" key="GridCell.Tab.1.left" timestamp="1607523168825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="317" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607522172205" />
-    <state width="1493" height="317" key="GridCell.Tab.1.right" timestamp="1607522172205">
+    <state width="1493" height="317" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607523168825" />
+    <state width="1493" height="317" key="GridCell.Tab.1.right" timestamp="1607523168825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="317" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607522172205" />
+    <state width="1493" height="317" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607523168825" />
     <state x="293" y="0" key="SettingsEditor" timestamp="1607392409598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -298,10 +293,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1603943763597" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1607511455196">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1607573283415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607511455196" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607573283415" />
     <state x="406" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607409442341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -421,7 +416,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CaseStudy/controller/MainController.java</url>
-          <line>357</line>
+          <line>370</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">

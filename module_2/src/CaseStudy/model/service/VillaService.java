@@ -22,4 +22,20 @@ public class VillaService {
         }
         return villaList;
     };
+    public Villa getVillaById(int index) throws IOException {
+        List<Villa> villaList = getAllVilla();
+        String s = "124129512";
+        
+        return villaList.get(index);
+    }
+    public List<String> getAllVillaName() throws IOException {
+        String[] villaListLine;
+        List<String> villaListName = new ArrayList<>();
+        villaListLine = readWriteFile.readFile("./src/CaseStudy/data/Villa.csv").split("\n");
+        for (String s : villaListLine) {
+            String[] propertiesVilla = s.split(",");
+            villaListName.add(propertiesVilla[0]);
+        }
+        return villaListName;
+    }
 }

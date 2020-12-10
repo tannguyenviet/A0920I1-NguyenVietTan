@@ -34,7 +34,11 @@ public class MainController {
 
     public void showAllVilla() throws IOException {
         List<Villa> villaList = villaService.getAllVilla();
-        villaList.forEach(Villa::showInfo);
+        AtomicInteger index = new AtomicInteger(0);
+        // Print Villa list in order
+        villaList.forEach(x->{
+            System.out.println(index.incrementAndGet()+x.getInfo());
+        });
 
     }
     public void showAllHouse() throws IOException {
@@ -43,6 +47,14 @@ public class MainController {
     }
     public void showAllRoom() throws IOException {
         System.out.println(readWriteFile.readFile(ROOM_PATH));
+
+    }
+    public void showAllNameVillaNotDuplicate() throws IOException {
+        List<String> villaListName = villaService.getAllVillaName();
+        TreeSet<String> villaTreeSet = new TreeSet<>(villaListName);
+        for(String villaName:villaTreeSet){
+            System.out.println(villaName);
+        }
 
     }
     public void showServices() throws IOException {
@@ -69,6 +81,7 @@ public class MainController {
                showAllRoom();
                 break;
             case 4:
+                showAllNameVillaNotDuplicate();
                 break;
             case 5:
                 break;
@@ -359,7 +372,7 @@ public class MainController {
             System.out.println(i.getAndIncrement()+" "+x.getInfo());;
             ;
         });
-        System.out.println("Chọn số thứ tự khác hàng cần booking");
+        System.out.println("Input index of customer have booking");
         int index = Integer.parseInt(sc.nextLine());
         Customer customerSelected = customerService.getCustomerByID(index);
         System.out.println(
@@ -370,6 +383,9 @@ public class MainController {
         switch (choice){
             case 1:
                 showAllVilla();
+                System.out.println("Input index of villa have booking");
+                int indexVilla = Integer.parseInt(sc.nextLine());
+                Villa villaSelected = villaService.getVillaById(indexVilla);
                 break;
             case 2:
                 showAllHouse();
