@@ -1,11 +1,10 @@
 package CaseStudy.controller;
 
 import CaseStudy.common.Regex;
-import CaseStudy.common.UserException;
+import CaseStudy.common.UserValid;
+import CaseStudy.exception.*;
 import CaseStudy.model.entity.*;
-import CaseStudy.model.service.CustomerService;
-import CaseStudy.model.service.ReadWriteFile;
-import CaseStudy.model.service.VillaService;
+import CaseStudy.model.service.*;
 
 import java.io.IOException;
 import java.util.*;
@@ -17,18 +16,22 @@ public class MainController {
     private static String VILLA_PATH = "./src/CaseStudy/data/Villa.csv";
     private static String ROOM_PATH ="./src/CaseStudy/data/Room.csv";
     private static String BOOKING_PATH ="./src/CaseStudy/data/Booking.csv";
-
-    private VillaService villaService;
+    private static VillaService villaService = new VillaService();
+    private HouseService houseService;
+    private RoomService roomService;
     private CustomerService customerService;
+    private EmployeeService employeeService;
     private Regex regex;
-    private UserException userException;
+    private UserValid userValid;
     private  ReadWriteFile readWriteFile;
     public MainController() throws IOException {
-        villaService = new VillaService();
+        houseService = new HouseService();
+        roomService = new RoomService();
         customerService = new CustomerService();
+        employeeService = new EmployeeService();
         regex = new Regex();
         readWriteFile = new ReadWriteFile();
-        userException = new UserException();
+        userValid = new UserValid();
 
     }
 
@@ -179,11 +182,25 @@ public class MainController {
                 detailConvenient=sc.nextLine();
 
                 System.out.println("Nhập diện tích hồ bơi");
-                areaPool =  Double.parseDouble(sc.nextLine());
-                while(regex.validateAreaPool(areaPool)){
-                    System.out.println("Nhập lại diện tích hồ bơi");
-                    areaPool =  Double.parseDouble(sc.nextLine());
-                };
+                while(true){
+                    try{
+                        areaPool = sc.nextDouble();
+                        if(!regex.validateAreaPool(areaPool)){
+                            throw new UserException("Diện tích phải là 1 số lớn hơn 30m2");
+                        }
+                        break;
+                    }
+                    catch (UserException e){
+                        e.printStackTrace();
+                    }
+                }
+
+
+//                areaPool =  Double.parseDouble(sc.nextLine());
+//                while(regex.validateAreaPool(areaPool)){
+//                    System.out.println("Nhập lại diện tích hồ bơi");
+//                    areaPool =  Double.parseDouble(sc.nextLine());
+//                };
 
                 System.out.println("Nhập số tầng của Villa");
                 floor =  Integer.parseInt(sc.nextLine());
@@ -293,25 +310,44 @@ public class MainController {
         System.out.println("Input new Customer: ");
 
         System.out.println("Name: ");
-        name =  sc.nextLine();
-        while(!userException.validName(name)){
-            System.out.println("Please! Input Name again ");
-            name =  sc.nextLine();
-        };
+
+
+//        while(!userValid.validName(name)){
+//            System.out.println("Please! Input Name again ");
+//            name =  sc.nextLine();
+//        };
+        while(true){
+            try {
+                name =  sc.nextLine();
+                if(userValid.validName(name)){
+                    break;
+                }
+            } catch (NameException e) {
+                System.out.println(e.getMessage());
+            }
+        }
         System.out.println("Date Of Birth : ");
-        birthday =  sc.nextLine();
-        while(!userException.validBirthday(birthday)){
-            System.out.println("Please! Input Date Of Birth  again ");
-            birthday =  sc.nextLine();
-        };
+        while(true){
+            try {
+                birthday =  sc.nextLine();
+                if(userValid.validBirthday(birthday)){
+                    break;
+                }
+            } catch (BirthdayException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
         System.out.println("Gender : ");
-        gender =  sc.nextLine();
-        choiceGender = userException.validGender(gender);
+
+
+        gender = sc.nextLine();
+        choiceGender = userValid.validGender(gender);
         while(choiceGender==-1){
 
             System.out.println("Please! Input Gender  again ");
             gender =  sc.nextLine();
-            choiceGender = userException.validGender(gender);
+            choiceGender = userValid.validGender(gender);
         };
         switch (choiceGender){
             case 0:
@@ -325,22 +361,41 @@ public class MainController {
         }
         System.out.println("Identity Card : ");
         identityCard =  sc.nextLine();
-        while(!userException.validIdCard(identityCard)){
-            System.out.println("Please! Input Identity Card  again ");
-            identityCard =  sc.nextLine();
-        };
+        while(true){
+            try {
+                identityCard =  sc.nextLine();
+                if(userValid.validIdCard(identityCard)){
+                    break;
+                }
+            } catch ( IdCardException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
         System.out.println("Phone Number : ");
-        phoneNumber =  sc.nextLine();
-        while(!userException.validPhoneNumber(phoneNumber)){
-            System.out.println("Please! Input Phone Number again ");
-            phoneNumber =  sc.nextLine();
-        };
+        while(true){
+            try {
+                phoneNumber =  sc.nextLine();
+                if(userValid.validPhoneNumber(phoneNumber)){
+                    break;
+                }
+            } catch ( PhoneException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
         System.out.println("Email : ");
         email =  sc.nextLine();
-        while(!userException.validMail(email)){
-            System.out.println("Please! Input Email again ");
-            email =  sc.nextLine();
-        };
+        while(true){
+            try {
+                email =  sc.nextLine();
+                if(userValid.validMail(email)){
+                    break;
+                }
+            } catch ( EmailException e) {
+                System.out.println(e.getMessage());
+            }
+        }
         System.out.println("Type Customer : ");
         typeCustomer =  sc.nextLine();
         System.out.println("Address : ");
@@ -361,7 +416,6 @@ public class MainController {
             }
         });
         listCus.forEach(Customer::showInfo);
-
     }
     public void addNewBook() throws IOException {
         Scanner sc = new Scanner(System.in);
@@ -389,11 +443,36 @@ public class MainController {
                 break;
             case 2:
                 showAllHouse();
+                System.out.println("Input index of House have booking");
+                int indexHouse = Integer.parseInt(sc.nextLine());
+                House houseSelected = houseService.getHouseById(indexHouse);
                 break;
             case 3:
                 showAllRoom();
+                System.out.println("Input index of Room have booking");
+                int indexRoom = Integer.parseInt(sc.nextLine());
+                Room roomSelected = roomService.getRoomById(indexRoom);
                 break;
         }
+    }
+    public void showInfoEmployee() throws IOException {
+        List<Employee> listEmployee = employeeService.getAllEmployee();
+        Map<Integer,Employee> employeeMap = new HashMap<>();
+        for(Employee employee:listEmployee){
+            employeeMap.put(employee.getId(),employee);
+        }
+        Set<Integer> set = employeeMap.keySet();
+        for (Integer key : set) {
+            System.out.println(key + " " + employeeMap.get(key).toString());
+        }
+    }
+    public void bookCinemaTicket() throws IOException {
+
+        System.out.println("------------Booking Cinema----------");
+        List<Customer> customerList=customerService.getAllCustomer();
+        AtomicInteger i= new AtomicInteger(0);
+
+        Queue<Customer> customerQueue = new LinkedList<>(customerList);
     }
     public void displayMenu() throws IOException {
         System.out.println(
@@ -429,16 +508,13 @@ public class MainController {
                 displayMenu();
                 break;
             case 6:
+                showInfoEmployee();
                 displayMenu();
                 break;
             case 7:
-
                 break;
-
-
         }
     }
-
     public static void main(String[] args) throws IOException {
         MainController main = new MainController();
             main.displayMenu();
