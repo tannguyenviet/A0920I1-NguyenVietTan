@@ -9,9 +9,9 @@ public class Customer {
     private String email;
     private String typeCustomer;
     private String address;
-    private String services;
+    private Services services;
 
-    public Customer(String name, String dateOfBirth, String gender, String identityCard, String phoneNumber, String email, String typeCustomer, String address, String services) {
+    public Customer(String name, String dateOfBirth, String gender, String identityCard, String phoneNumber, String email, String typeCustomer, String address) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.gender = gender;
@@ -20,7 +20,7 @@ public class Customer {
         this.email = email;
         this.typeCustomer = typeCustomer;
         this.address = address;
-        this.services = services;
+        this.services = null;
     }
 
     public String getName() {
@@ -87,16 +87,30 @@ public class Customer {
         this.address = address;
     }
 
-    public String getServices() {
+    public Services getServices() {
         return services;
     }
 
-    public void setServices(String services) {
+    public void setServices(Services services) {
         this.services = services;
     }
 
-    public void showInfo(){
-        System.out.println(this.name+" "+this.dateOfBirth+" "+this.gender+" "+this.identityCard+" "+this.phoneNumber+" "+this.email+" "+this.typeCustomer+" "+this.address);
+//    public void showInfo(){
+//        System.out.println("Name: "+this.name+" BirhDate "+this.dateOfBirth+" Gender: "+this.gender+" Identity Card: "+this.identityCard+" Phone Number "+this.phoneNumber+" Email "+this.email+" Customer Type "+this.typeCustomer+" Address "+this.address);
+//        if(this.services==null){
+//            System.out.println(" none order");
+//        }
+//        else this.services.showInfo();
+//    }
+    public String showInfo(){
+        String result ="";
+        result= ("Name: "+this.name+" BirhDate "+this.dateOfBirth+" Gender: "+this.gender+" Identity Card: "+this.identityCard+" Phone Number "+this.phoneNumber+" Email "+this.email+" Customer Type "+this.typeCustomer+" Address "+this.address);
+        if(this.services==null){
+            result=result+" None Order";
+        }
+        else result=result+ this.services.showInfo();
+        return result;
+//
     }
     public String getInfo(){
        return (this.name+" "+this.dateOfBirth+" "+this.gender+" "+this.identityCard+" "+this.phoneNumber+" "+this.email+" "+this.typeCustomer+" "+this.address);

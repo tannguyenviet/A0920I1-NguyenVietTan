@@ -51,9 +51,9 @@ public class Villa extends Services {
     }
 
     @Override
-    public void showInfo() {
+    public String showInfo() {
         System.out.println("VILLA: ");
-        System.out.println(this.getId()+","+this.getName()+","+this.getAreaUsed()+","+this.getRentCost()+","+this.getMaxPeople()+","+this.getTypeRent()+","+this.standardRoom+","+this.detailConvenient+","+this.arePool+","+this.floor);
+        return (this.getId()+","+this.getName()+","+this.getAreaUsed()+","+this.getRentCost()+","+this.getMaxPeople()+","+this.getTypeRent()+","+this.standardRoom+","+this.detailConvenient+","+this.arePool+","+this.floor);
     }
     @Override
     public String toString(){

@@ -22,24 +22,25 @@ public class UserValid {
         pattern = Pattern.compile(NAME_REGEX);
         matcher=pattern.matcher(name+" ");
         if(!matcher.matches()){
-            throw new NameException("must have the first character uppercase format and no extra space characters are allowed\n Please try again!");
+            throw new NameException("First character must be uppercase format and no extra space characters are allowed\n Please try again!");
         }
         else{
             return true;
         }
+
     };
     public boolean validMail(String mail) throws EmailException {
         pattern = Pattern.compile(EMAIL_REGEX);
         matcher=pattern.matcher(mail);
         if(!matcher.matches()){
-            throw new EmailException("must have the first character uppercase format and no extra space characters are allowed\n Please try again!");
+            throw new EmailException("Email must be in the correct format abc@abc.abc \n Please try again!");
         }
         else{
             return true;
         }
     };
-    public int validGender(String gender){
-        // return -1->false ; return 0 ->Male ; return 1-Female ; return 2 Unknow
+    public int validGender(String gender) throws GenderException {
+        // return -1->false ; return 0 ->Male ; return 1-Fema qle ; return 2 Unknow
         gender =gender.toLowerCase();
         switch (gender){
             case "male":
@@ -49,14 +50,14 @@ public class UserValid {
             case "unknown":
                 return 2;
             default:
-                return -1;
+                throw new GenderException("Gender must be Male, FeMale or Unknow");
         }
     }
     public boolean validIdCard(String idCard) throws IdCardException {
         pattern = Pattern.compile(ID_CARD_REGEX);
         matcher=pattern.matcher(idCard);
         if(!matcher.matches()){
-            throw new IdCardException("must have the first character uppercase format and no extra space characters are allowed\n Please try again!");
+            throw new IdCardException("Id Card must be in correct with 9 number XXX XXX XXX\n Please try again!");
         }
         else{
             return true;
@@ -73,7 +74,7 @@ public class UserValid {
             if (year - Integer.parseInt(birthday.substring(6, 10)) > 18 &&Integer.parseInt(birthday.substring(6, 10))>1900){
                 return true;
             }else {
-                throw new BirthdayException("Errorr birthday");
+                throw new BirthdayException("Year must be greater than 1900 and age greater than 18 ");
             }
         }
     }
@@ -81,7 +82,7 @@ public class UserValid {
         pattern = Pattern.compile(PHONE_REGEX);
         matcher=pattern.matcher(phone);
         if(!matcher.matches()){
-            throw new PhoneException("must have the first character uppercase format and no extra space characters are allowed\n Please try again!");
+            throw new PhoneException("Phone must be number \n Please try again!");
         }
         else{
             return true;

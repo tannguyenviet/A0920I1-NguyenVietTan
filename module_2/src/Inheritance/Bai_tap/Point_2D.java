@@ -3,11 +3,11 @@ package Inheritance.Bai_tap;
 public class Point_2D {
     private float x;
     private float y;
-    Point_2D(){
+    public Point_2D(){
         this.x=3.0f;
         this.y=4.0f;
     }
-    Point_2D(float x, float y){
+    public Point_2D(float x, float y){
         this.x =x;
         this.y = y;
     }

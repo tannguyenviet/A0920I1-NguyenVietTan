@@ -21,7 +21,8 @@ public class Room extends Services {
     }
 
     @Override
-    public void showInfo() {
+    public String showInfo() {
+        return this.getId()+","+this.getName()+","+this.getAreaUsed()+","+this.getRentCost()+","+this.getMaxPeople()+","+this.getTypeRent()+","+this.getFreeServices();
 
     }
     @Override

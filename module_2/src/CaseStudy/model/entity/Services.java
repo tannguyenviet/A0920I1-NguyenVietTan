@@ -68,6 +68,6 @@ public abstract class Services {
         this.typeRent = typeRent;
     }
 
-    public abstract void showInfo();
+    public abstract String showInfo();
 
 }

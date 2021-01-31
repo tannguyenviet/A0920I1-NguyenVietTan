@@ -16,7 +16,7 @@ public class MainController {
     private static String VILLA_PATH = "./src/CaseStudy/data/Villa.csv";
     private static String ROOM_PATH ="./src/CaseStudy/data/Room.csv";
     private static String BOOKING_PATH ="./src/CaseStudy/data/Booking.csv";
-    private static VillaService villaService = new VillaService();
+    private VillaService villaService = new VillaService();
     private HouseService houseService;
     private RoomService roomService;
     private CustomerService customerService;
@@ -35,8 +35,12 @@ public class MainController {
 
     }
 
+    /** Program display list Villa in Order
+     * @throws IOException
+     */
     public void showAllVilla() throws IOException {
         List<Villa> villaList = villaService.getAllVilla();
+
         AtomicInteger index = new AtomicInteger(0);
         // Print Villa list in order
         villaList.forEach(x->{
@@ -58,7 +62,6 @@ public class MainController {
         for(String villaName:villaTreeSet){
             System.out.println(villaName);
         }
-
     }
     public void showServices() throws IOException {
         System.out.println(
@@ -191,7 +194,7 @@ public class MainController {
                         break;
                     }
                     catch (UserException e){
-                        e.printStackTrace();
+                        System.out.println("Mời bạn nhập laij");
                     }
                 }
 
@@ -340,15 +343,15 @@ public class MainController {
 
         System.out.println("Gender : ");
 
-
-        gender = sc.nextLine();
-        choiceGender = userValid.validGender(gender);
-        while(choiceGender==-1){
-
-            System.out.println("Please! Input Gender  again ");
-            gender =  sc.nextLine();
-            choiceGender = userValid.validGender(gender);
-        };
+        while(true){
+            try {
+                gender = sc.nextLine();
+                choiceGender = userValid.validGender(gender);
+                break;
+            } catch (GenderException e) {
+                System.out.println(e.getMessage());
+            }
+        }
         switch (choiceGender){
             case 0:
                 gender = "Male";
@@ -359,6 +362,7 @@ public class MainController {
             case 2:
                 gender = "Unknown";
         }
+
         System.out.println("Identity Card : ");
         identityCard =  sc.nextLine();
         while(true){
@@ -385,7 +389,7 @@ public class MainController {
         }
 
         System.out.println("Email : ");
-        email =  sc.nextLine();
+
         while(true){
             try {
                 email =  sc.nextLine();
@@ -400,7 +404,7 @@ public class MainController {
         typeCustomer =  sc.nextLine();
         System.out.println("Address : ");
         address =  sc.nextLine();
-        Customer customer =  new Customer(name,birthday,gender,identityCard,phoneNumber,email,typeCustomer,address,null);
+        Customer customer =  new Customer(name,birthday,gender,identityCard,phoneNumber,email,typeCustomer,address);
         readWriteFile.writeFile(CUSTOMER_PATH,customer.toString());
     }
     public void showInfoCustomer() throws IOException {
@@ -415,13 +419,21 @@ public class MainController {
                 else return choice;
             }
         });
-        listCus.forEach(Customer::showInfo);
+        AtomicInteger auto =  new AtomicInteger(1);
+
+
+        for(int i =0;i<listCus.size();i++){
+            System.out.println(i+". "+listCus.get(i).showInfo());
+        }
     }
     public void addNewBook() throws IOException {
         Scanner sc = new Scanner(System.in);
         System.out.println("------------Add New Booking----------");
         List<Customer> customerList=customerService.getAllCustomer();
         AtomicInteger i= new AtomicInteger(0);
+//        for(Customer customer:customerList){
+//            System.out.println(customer.getInfo());
+//        }
         customerList.forEach(x->{
             System.out.println(i.getAndIncrement()+" "+x.getInfo());;
             ;
@@ -440,18 +452,25 @@ public class MainController {
                 System.out.println("Input index of villa have booking");
                 int indexVilla = Integer.parseInt(sc.nextLine());
                 Villa villaSelected = villaService.getVillaById(indexVilla);
+                customerSelected.setServices(villaSelected);
+
+                customerSelected.showInfo();
                 break;
             case 2:
                 showAllHouse();
                 System.out.println("Input index of House have booking");
                 int indexHouse = Integer.parseInt(sc.nextLine());
                 House houseSelected = houseService.getHouseById(indexHouse);
+                customerSelected.setServices(houseSelected);
+
                 break;
             case 3:
                 showAllRoom();
                 System.out.println("Input index of Room have booking");
                 int indexRoom = Integer.parseInt(sc.nextLine());
                 Room roomSelected = roomService.getRoomById(indexRoom);
+                customerSelected.setServices(roomSelected);
+
                 break;
         }
     }

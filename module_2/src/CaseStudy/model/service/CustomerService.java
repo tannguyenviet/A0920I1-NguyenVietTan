@@ -18,7 +18,7 @@ public class CustomerService {
         customerListLine = readWriteFile.readFile("./src/CaseStudy/data/Customer.csv").split("\n");
         for(int i =0;i<customerListLine.length;i++){
             String[] propertiesCustomer = customerListLine[i].split(",");
-            customerList.add(new Customer(propertiesCustomer[0],propertiesCustomer[1],propertiesCustomer[2],propertiesCustomer[3],propertiesCustomer[4],propertiesCustomer[5],propertiesCustomer[6],propertiesCustomer[7],null));
+            customerList.add(new Customer(propertiesCustomer[0],propertiesCustomer[1],propertiesCustomer[2],propertiesCustomer[3],propertiesCustomer[4],propertiesCustomer[5],propertiesCustomer[6],propertiesCustomer[7]));
         }
         return customerList;
     };
@@ -26,4 +26,5 @@ public class CustomerService {
         List<Customer> customerList = getAllCustomer();
         return customerList.get(i);
     }
+
 }
