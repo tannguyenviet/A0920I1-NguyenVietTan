@@ -110,6 +110,15 @@ public class MainController {
     private static void showInfoEmployee(){
             employeeService.addNewEmployee();
     }
+    private static void updateService(){
+            villaService.updateVilla();
+    }
+    private static void deleteService(){
+        villaService.deleteVilla();
+    }
+    private static void searchService(){
+        villaService.searchService();
+    }
     private static void displayMenu()  {
 
         System.out.println(
@@ -120,7 +129,10 @@ public class MainController {
                         "4. Show Information of Customer\n" +
                         "5. Add New Booking\n" +
                         "6. Show Information of Employee\n" +
-                        "7. Exit");
+                        "7. Update Service\n" +
+                        "8. Delete Service\n" +
+                        "9. Search Service\n" +
+                        "10. Exit");
         Scanner sc = new Scanner(System.in);
         int choice =Integer.parseInt(sc.nextLine());
         switch (choice){
@@ -149,7 +161,19 @@ public class MainController {
                 displayMenu();
                 break;
             case 7:
+                updateService();
+                displayMenu();
                 break;
+            case 8:
+                deleteService();
+                displayMenu();
+
+                break;
+            case 9:
+                searchService();
+                displayMenu();
+                break;
+
         }
 
     }

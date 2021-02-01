@@ -9,7 +9,9 @@ public class Villa extends Services {
     public Villa(String id, String name, double areaUsed, int rentCost, int maxPeople, String typeRent) {
         super(id, name, areaUsed, rentCost, maxPeople, typeRent);
     }
-
+    public Villa(String id){
+        super(id);
+    }
     public Villa(String id, String name, double areaUsed, int rentCost, int maxPeople, String typeRent, String standardRoom, String anotherConvenient, Double areaPool, int floorQuantity) {
         super(id, name, areaUsed, rentCost, maxPeople, typeRent);
         this.standardRoom = standardRoom;
@@ -62,5 +64,17 @@ public class Villa extends Services {
     }
     public String toStringNotId(){
         return this.getName()+","+this.getAreaUsed()+","+this.getRentCost()+","+this.getMaxPeople()+","+this.getTypeRent()+","+this.standardRoom+","+this.anotherConvenient+","+this.areaPool+","+this.floorVilla;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == null || !(obj instanceof Villa)){
+            return false;
+        }
+        Villa villa = (Villa)obj;
+        if(this.getId().equals(villa.getId())){
+            return true;
+        }
+        else return false;
     }
 }

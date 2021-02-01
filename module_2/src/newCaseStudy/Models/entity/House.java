@@ -54,4 +54,14 @@ public class House extends Services{
     public String toStringNotId(){
         return this.getName()+","+this.getAreaUsed()+","+this.getRentCost()+","+this.getMaxPeople()+","+this.getTypeRent()+","+this.standardRoom+","+this.anotherConvenient+","+this.floorHouse;
     }
+
+//    @Override
+//    public boolean equals(Object obj) {
+//        if(obj ==null || !(obj instanceof House)){
+//            return false;
+//        }
+//        else{
+//
+//        }
+//    }
 }

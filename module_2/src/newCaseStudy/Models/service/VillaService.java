@@ -1,9 +1,11 @@
 package newCaseStudy.Models.service;
 
+import com.google.gson.internal.bind.util.ISO8601Utils;
 import newCaseStudy.Commons.ReadWriteFile;
 import newCaseStudy.Commons.Regex;
 import newCaseStudy.Models.entity.Villa;
 import newCaseStudy.exception.UserException;
+import org.w3c.dom.ls.LSOutput;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -113,5 +115,47 @@ public class VillaService {
         for(String villaName:villaTreeSet){
             System.out.println(villaName);
         }
+    }
+    public void updateVilla(){
+        System.out.println("Input Id Villa:");
+        String id = sc.nextLine();
+
+        int index =villaList.indexOf(new Villa(id));
+        if(index<0){
+            System.out.println("Id not Correct");
+
+        }else{
+            System.out.println("Input replace Id");
+            String idReplace = sc.nextLine();
+            villaList.get(index).setId(idReplace);
+            System.out.println("Update Success");
+        }
+
+
+
+    }
+    public void deleteVilla(){
+        showAllVilla();
+        System.out.println("Input Id You Want to delete: ");
+        String id = sc.nextLine();
+        int index =villaList.indexOf(new Villa(id));
+        if(index<0){
+            System.out.println("Id not Correct");
+        }else{
+            villaList.remove(index);
+            System.out.println("Update Success");
+        }
+    }
+    // Search  By Name
+    public void searchService(){
+        List<Villa> villaListResult = new ArrayList<>();
+        System.out.println("Input key you want to search ");
+        String key = sc.nextLine();
+        for(Villa villa:villaList){
+            if(villa.getName().contains(key)){
+                villaListResult.add(villa);
+            }
+        }
+        villaListResult.forEach(x-> System.out.println(x.showInfo()));
     }
 }
