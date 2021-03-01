@@ -4,9 +4,11 @@ import com.google.gson.internal.bind.util.ISO8601Utils;
 import newCaseStudy.Commons.ReadWriteFile;
 import newCaseStudy.Commons.Regex;
 import newCaseStudy.Models.entity.Villa;
+import newCaseStudy.exception.NameException;
 import newCaseStudy.exception.UserException;
 import org.w3c.dom.ls.LSOutput;
 
+import javax.naming.Name;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +55,7 @@ public class VillaService {
             try{
                 areaPool = (sc.nextLine());
                 if(!regex.validateAreaPool(areaPool)){
-                    throw new  UserException("Area Pool must have smaller than 30 m2");
+                    throw new UserException("Area Pool must have smaller than 30 m2") ;
                 }
                 else{
                     break;
@@ -119,20 +121,15 @@ public class VillaService {
     public void updateVilla(){
         System.out.println("Input Id Villa:");
         String id = sc.nextLine();
-
         int index =villaList.indexOf(new Villa(id));
         if(index<0){
             System.out.println("Id not Correct");
-
         }else{
             System.out.println("Input replace Id");
             String idReplace = sc.nextLine();
             villaList.get(index).setId(idReplace);
             System.out.println("Update Success");
         }
-
-
-
     }
     public void deleteVilla(){
         showAllVilla();

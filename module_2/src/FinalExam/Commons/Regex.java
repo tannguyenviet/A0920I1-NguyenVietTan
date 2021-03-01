@@ -1,4 +1,4 @@
-package newCaseStudy.Commons;
+package FinalExam.Commons;
 
 import java.util.Calendar;
 import java.util.regex.Matcher;
@@ -46,6 +46,11 @@ public class Regex {
     public boolean validateRentCost(String rentCost){
         pattern = Pattern.compile(NUMBER_REGEX);
         matcher = pattern.matcher(rentCost);
+        return matcher.matches();
+    }
+    public boolean validateNumber(String number){
+        pattern = Pattern.compile(NUMBER_REGEX);
+        matcher = pattern.matcher(number);
         return matcher.matches();
     }
     public boolean validateMaxPeople(String maxPeople){

@@ -41,7 +41,7 @@ public class MainController {
                 villaService.inputNewVilla();
                 break;
             case 2:
-                houseService.inputNewHouse();
+//                houseService.inputNewHouse();
                 break;
 
             case 3:

@@ -11,7 +11,8 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-public class HouseService {    private  ComonService comonService;
+public class HouseService {
+    private  ComonService comonService;
     private  Regex regex;
     private  Scanner sc;
     private  ReadWriteFile readWriteFile;
@@ -61,7 +62,7 @@ public class HouseService {    private  ComonService comonService;
     /**
      * Chương trình cho người dùng nhập vào 1 Villa mới sau đó ghi vào file Villa.csv
      */
-    public void inputNewHouse(){
+    public void inputNewHsouse(){
         System.out.println("-------------------------------------------------");
         System.out.println("Input New House  : ");
         House newHouse = (House)comonService.inputService(2);
