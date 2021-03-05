@@ -1,4 +1,4 @@
-
+-- databate demo 
 drop table customers;
 create table customers(
 customerNumber int primary key  ,

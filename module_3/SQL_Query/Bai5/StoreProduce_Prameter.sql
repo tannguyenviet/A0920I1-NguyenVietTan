@@ -1,13 +1,54 @@
 DELIMITER //
-drop procedure findAllCustomers; -- xoa di va tao lai procedure moi neu muon thay the
+CREATE PROCEDURE getCusById
 
-CREATE PROCEDURE findAllCustomers()
+(IN cusNum INT(11))
 
 BEGIN
 
-  SELECT * FROM customers;
+  SELECT * FROM customers WHERE customerNumber = cusNum;
 
 END //
+DELIMITER ;
+
+DELIMITER //
+
+CREATE PROCEDURE GetCustomersCountByCity(
+
+    IN  in_city VARCHAR(50),
+
+    OUT total INT
+
+)
+
+BEGIN
+
+    SELECT COUNT(customerNumber)
+
+    INTO total
+
+    FROM customers
+
+    WHERE city = in_city;
+
+END//
 
 DELIMITER ;
 
+DELIMITER //
+
+CREATE PROCEDURE TimnguoibyId(
+
+    IN  id int,
+    OUT nameCustomer nvarchar(45)
+)
+
+BEGIN
+	set @result =1;
+    SELECT customerName from customers where customerNumber = id;
+
+
+END//
+
+DELIMITER ;
+
+call GetCustomersCountByCity(10002); 
