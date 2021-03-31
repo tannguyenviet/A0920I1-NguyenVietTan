@@ -1,0 +1,8 @@
+.haveBoder{
+    border: solid blue 3px;
+    margin: 20px;
+}
+.main{
+    display:flex;
+    /*flex-direction: row;*/
+}
