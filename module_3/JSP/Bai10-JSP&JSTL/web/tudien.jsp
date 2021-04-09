@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <form action="tudienxong.jsp" method="post">
+    <form action="tudien" method="post">
         <label>KeyWord: </label><br/>
         <input type="text" name="key" placeholder="key" /><br/>
         <input type="submit" value="search">

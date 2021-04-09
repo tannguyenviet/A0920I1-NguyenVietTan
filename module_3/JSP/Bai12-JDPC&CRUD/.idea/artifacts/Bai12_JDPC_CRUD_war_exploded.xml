@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Bai12-JDPC&amp;CRUD:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Bai12_JDPC_CRUD_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Bai12-JDPC&amp;CRUD/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Bai12-JDPC&amp;CRUD" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="C:/apache-tomcat-9.0.39/webapps/examples/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" />
+          <element id="file-copy" path="C:/apache-tomcat-9.0.39/webapps/examples/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" />
+          <element id="file-copy" path="C:/mysql-connector-java-8.0.20.jar" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.20" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
