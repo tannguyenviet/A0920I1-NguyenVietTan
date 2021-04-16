@@ -1,0 +1,10 @@
+.item-left{
+    border: solid 4px dodgerblue;
+
+    height: 473px;
+
+}
+.body{
+    border: solid 4px dodgerblue;
+    border-left: solid 0px;
+}
