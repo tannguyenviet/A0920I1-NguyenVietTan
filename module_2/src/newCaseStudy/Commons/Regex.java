@@ -11,7 +11,7 @@ public class Regex {
     private static final String DATE_BIRTH_REGEX ="^\\d{2}\\/\\d{2}\\/\\d{4}$";
     private static final String NUMBER_REGEX ="^[1-9]\\d*$";
     private static final String SERVICE_FREE_REGEX ="^massage|karaoke|food|drink|car$";
-//    private static final String AREA_POOL_REGEX="^([3-9]\\d|\\d{3,})$";
+//    private static final String AREA_POOL_REGEX   ="^([3-9]\\d|\\d{3,})$";
     private static final String AREA_POOL_REGEX="^([3][0]\\.\\d+)|([3][1-9]\\.?\\d*)|([4-9]\\d\\.?\\d*)|(\\d{3,}\\.?\\d*)$";
     private static final String MAX_PEOPLE="^[1-9]|[1]\\d$";
 

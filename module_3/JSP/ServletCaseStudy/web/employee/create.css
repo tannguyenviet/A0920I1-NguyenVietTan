@@ -1,0 +1,12 @@
+.item-left{
+    border-right: solid 4px dodgerblue;
+}
+.content{
+    border: solid 4px dodgerblue;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 554px;
+}
+.main{
+    padding: 20px;
+}

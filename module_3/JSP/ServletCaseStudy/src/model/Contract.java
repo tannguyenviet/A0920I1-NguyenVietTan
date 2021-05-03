@@ -1,6 +1,6 @@
 package model;
 
-public class Contract {
+public  class Contract {
     private String id;
     private String start_date;
     private String end_date;

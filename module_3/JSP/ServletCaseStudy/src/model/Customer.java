@@ -97,4 +97,18 @@ public class Customer {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        return "{Student} : "+
+                " id: "+this.id+
+                " type:id: "+this.type_id+
+                " name: "+this.name+
+                " birthday: "+this.birthday+
+                " gender "+this.gender+
+                " idcard "+this.id_card+
+                " phone "+this.phone+
+                " email "+this.email+
+                " address "+this.address;
+    }
 }

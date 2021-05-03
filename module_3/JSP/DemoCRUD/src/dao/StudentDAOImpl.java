@@ -99,7 +99,6 @@ public class StudentDAOImpl  implements StudentDAO{
         Connection connection = null;
         PreparedStatement statement = null;
         Student student = null;
-        List<Student> studentList = new ArrayList<>();
         try{
             connection = ConnectDB.getConnection();
             statement = connection.prepareStatement(DELETE_STUDENT_SQL);

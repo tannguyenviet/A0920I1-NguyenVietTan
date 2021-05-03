@@ -2,39 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8c81ff-0ceb-4386-8a6b-1adf4f909fc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/Commons/ReadWriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/Commons/Regex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/Controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/Model/SPNhapKhau.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/Model/SPXuatKhau.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/Model/SanPham.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/Service/CommonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/Service/NhapKhauService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/Service/XuatKhauService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/data/NhapKhau.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/data/XuatKhau.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FinalExam/exception/NotFoundProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/common/ValidateData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module_1/17. Lập trình hướng đối tượng/codethamkhao/objects" beforeDir="false" afterPath="$PROJECT_DIR$/../module_1/17. Lập trình hướng đối tượng/codethamkhao/objects" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module_1/text_modlue/cau4/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/Commons/Regex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/Commons/Regex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/Controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/Controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/Models/service/HouseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/Models/service/HouseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/Models/service/VillaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/Models/service/VillaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/data/Booking.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/data/Booking.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/data/Customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/data/Customer.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/newCaseStudy/data/Villa.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/test/test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/test/test2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/FinalExam/data/NhapKhau.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/FinalExam/data/NhapKhau.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/META-INF/module_2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FinalExam/data/NhapKhau.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/FinalExam/data/NhapKhau.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/newCaseStudy/Commons/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/newCaseStudy/Commons/Regex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/newCaseStudy/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/newCaseStudy/Controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/newCaseStudy/Models/service/HouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/newCaseStudy/Models/service/HouseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/newCaseStudy/Models/service/VillaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/newCaseStudy/Models/service/VillaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/newCaseStudy/data/Booking.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/newCaseStudy/data/Booking.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/newCaseStudy/data/Customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/newCaseStudy/data/Customer.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/newCaseStudy/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/newCaseStudy/data/Villa.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Fly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Fly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module_2_demo/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/Bai11_MVC_Model/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/Bai11_MVC_Model/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/Bai11_MVC_Model/web/view/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/Bai11_MVC_Model/web/view/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/Bai12-JDPC&amp;CRUD/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/Bai12-JDPC&amp;CRUD/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/DemoCRUD/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/DemoCRUD/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/DemoCRUD/src/dao/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/DemoCRUD/src/dao/StudentDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/JDBC Querying &amp; Transaction/out/artifacts/JDBC_Querying___Transaction_war_exploded/WEB-INF/classes/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/JDBC Querying &amp; Transaction/out/artifacts/JDBC_Querying___Transaction_war_exploded/WEB-INF/classes/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/JDBC Querying &amp; Transaction/out/production/JDBC Querying &amp; Transaction/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/JDBC Querying &amp; Transaction/out/production/JDBC Querying &amp; Transaction/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/JDBC Querying &amp; Transaction/src/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/JDBC Querying &amp; Transaction/src/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/artifacts/ServletCaseStudy_war_exploded/WEB-INF/classes/META-INF/ServletCaseStudy.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/artifacts/ServletCaseStudy_war_exploded/WEB-INF/classes/ultils/ConnectDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/artifacts/ServletCaseStudy_war_exploded/WEB-INF/classes/ultils/ConnectDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/artifacts/ServletCaseStudy_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/artifacts/ServletCaseStudy_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/artifacts/ServletCaseStudy_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/artifacts/ServletCaseStudy_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/artifacts/ServletCaseStudy_war_exploded/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/artifacts/ServletCaseStudy_war_exploded/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/production/ServletCaseStudy/META-INF/ServletCaseStudy.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/production/ServletCaseStudy/ultils/ConnectDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/out/production/ServletCaseStudy/ultils/ConnectDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/controller/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/dao/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/dao/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/dao/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/dao/CustomerDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/model/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/model/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/service/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/ultils/ConnectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/src/ultils/ConnectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/web/WEB-INF/customer/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/web/WEB-INF/customer/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/web/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../module_3/JSP/ServletCaseStudy/web/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +85,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../LapTrinh/TypeScript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -118,7 +121,20 @@
       <recent name="BaiTapAnhHai.Entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainController (2)">
+  <component name="RunManager" selected="Application.ListMagazineTitle">
+    <configuration name="ListMagazineTitle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B19_string_regex.CrawlListMagazineTitle.ListMagazineTitle" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="B19_string_regex.CrawlListMagazineTitle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainController (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FinalExam.Controller.MainController" />
       <module name="module_2" />
@@ -171,26 +187,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.testString" />
-      <module name="module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListMagazineTitle" />
         <item itemvalue="Application.MainController (2)" />
         <item itemvalue="Application.test2" />
         <item itemvalue="Application.MainController" />
         <item itemvalue="Application.RunSayHello" />
-        <item itemvalue="Application.testString" />
       </list>
     </recent_temporary>
   </component>
@@ -274,6 +277,13 @@
       <workItem from="1612251409277" duration="5800000" />
       <workItem from="1613709671964" duration="625000" />
       <workItem from="1613989895341" duration="11578000" />
+      <workItem from="1614911739323" duration="159000" />
+      <workItem from="1619101014375" duration="916000" />
+      <workItem from="1619229815240" duration="1938000" />
+      <workItem from="1619321929070" duration="1401000" />
+      <workItem from="1619435270474" duration="2986000" />
+      <workItem from="1619527550495" duration="30000" />
+      <workItem from="1619535835884" duration="1507000" />
     </task>
     <servers />
   </component>
@@ -298,10 +308,6 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1613995752378" />
-    <state x="499" y="189" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1605527174417">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="189" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1605527174417" />
     <state x="566" y="298" width="413" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1613992412480">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -318,26 +324,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="512" y="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1611465841923" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1614045299898">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1619527575914">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614045299898" />
-    <state width="1493" height="410" key="GridCell.Tab.0.bottom" timestamp="1614070162359">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619527575914" />
+    <state width="1493" height="290" key="GridCell.Tab.0.bottom" timestamp="1619538033921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="410" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614070162359" />
-    <state width="1493" height="410" key="GridCell.Tab.0.center" timestamp="1614070162359">
+    <state width="1493" height="290" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619538033921" />
+    <state width="1493" height="290" key="GridCell.Tab.0.center" timestamp="1619538033914">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="410" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1614070162359" />
-    <state width="1493" height="410" key="GridCell.Tab.0.left" timestamp="1614070162359">
+    <state width="1493" height="290" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619538033914" />
+    <state width="1493" height="290" key="GridCell.Tab.0.left" timestamp="1619538033914">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="410" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1614070162359" />
-    <state width="1493" height="410" key="GridCell.Tab.0.right" timestamp="1614070162359">
+    <state width="1493" height="290" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619538033914" />
+    <state width="1493" height="290" key="GridCell.Tab.0.right" timestamp="1619538033921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="410" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1614070162359" />
+    <state width="1493" height="290" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619538033921" />
     <state width="1493" height="410" key="GridCell.Tab.1.bottom" timestamp="1614070162359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -358,22 +364,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="293" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1614045234026" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1613989905709">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1619527564810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1613989905709" />
-    <state x="406" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607409442341">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="406" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1607409442341" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1619527564810" />
     <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611217048474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1611217048474" />
-    <state x="209" y="0" key="new project wizard" timestamp="1610422452945">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="209" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1610422452945" />
     <state x="511" y="32" key="refactoring.ChangeSignatureDialog" timestamp="1611581414284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

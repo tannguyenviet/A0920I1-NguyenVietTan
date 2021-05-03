@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+.item-left{
+    border-right: solid 4px dodgerblue;
+}
+.content{
+    margin: 0 !important;
+    padding: 0 !important;
+    border: solid 4px dodgerblue;
+}
