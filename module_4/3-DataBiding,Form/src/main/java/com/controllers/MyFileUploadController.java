@@ -43,10 +43,13 @@ public class MyFileUploadController {
         }
 
     }
-
+    @RequestMapping(value = "/uploadfile")
+    public String viewHome(){
+        return "/uploadfile/menu";
+    }
     // GET: Hiển thị trang form upload
 
-    @RequestMapping(value = "/uploadOneFile", method = RequestMethod.GET)
+    @RequestMapping(value = "/uploadfile/uploadOneFile", method = RequestMethod.GET)
 
     public String uploadOneFileHandler(Model model) {
 
@@ -56,13 +59,13 @@ public class MyFileUploadController {
 
         // Forward to "/WEB-INF/pages/uploadOneFile.jsp".
 
-        return "uploadOneFile";
+        return "/uploadfile/uploadOneFile";
 
     }
 
     // POST: Xử lý Upload
 
-    @RequestMapping(value = "/uploadOneFile", method = RequestMethod.POST)
+    @RequestMapping(value = "/uploadfile/uploadOneFile", method = RequestMethod.POST)
 
     public String uploadOneFileHandlerPOST(HttpServletRequest request, Model model, @ModelAttribute("myUploadForm") MyUploadForm myUploadForm) {
 
@@ -72,7 +75,7 @@ public class MyFileUploadController {
 
     // GET: Hiển thị trang form upload
 
-    @RequestMapping(value = "/uploadMultiFile", method = RequestMethod.GET)
+    @RequestMapping(value = "/uploadfile/uploadMultiFile", method = RequestMethod.GET)
 
     public String uploadMultiFileHandler(Model model) {
 
@@ -82,7 +85,7 @@ public class MyFileUploadController {
 
         // Forward to "/WEB-INF/pages/uploadMultiFile.jsp".
 
-        return "uploadMultiFile";
+        return "/uploadfile/uploadMultiFile";
 
     }
 
@@ -90,7 +93,7 @@ public class MyFileUploadController {
 
     // POST: Xử lý Upload
 
-    @RequestMapping(value = "/uploadMultiFile", method = RequestMethod.POST)
+    @RequestMapping(value = "/uploadfile/uploadMultiFile", method = RequestMethod.POST)
 
     public String uploadMultiFileHandlerPOST(HttpServletRequest request, Model model, @ModelAttribute("myUploadForm") MyUploadForm myUploadForm) {
 
@@ -166,7 +169,7 @@ public class MyFileUploadController {
 
         model.addAttribute("uploadedFiles", uploadedFiles);
 
-        return "uploadResult";
+        return "/uploadfile/uploadResult";
 
     }
 }

@@ -8,6 +8,7 @@ public class MyUploadForm {
     // Upload files.
 
     private CommonsMultipartFile[] fileDatas;
+    private String file;
 
     public String getDescription() {
 
@@ -31,5 +32,13 @@ public class MyUploadForm {
 
         this.fileDatas = fileDatas;
 
+    }
+
+    public String getFile() {
+        return file;
+    }
+
+    public void setFile(String file) {
+        this.file = file;
     }
 }
