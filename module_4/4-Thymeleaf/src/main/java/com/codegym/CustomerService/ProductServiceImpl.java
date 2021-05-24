@@ -3,6 +3,7 @@ package com.codegym.CustomerService;
 import com.codegym.model.Product;
 import org.springframework.stereotype.Service;
 
+import java.awt.print.Pageable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -40,4 +41,6 @@ public class ProductServiceImpl implements ProductService {
     public void updateProduct(Product product) {
         products.replace(Integer.parseInt(product.getId()),product);
     }
+
+
 }
