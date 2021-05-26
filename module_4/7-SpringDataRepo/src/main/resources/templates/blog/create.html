@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/blog/layout::head">
+</head>
+<body>
+
+<h3>Create new Blog</h3>
+<form th:action="@{/blog/save}" th:object="${blog}" method="post">
+    <div>
+        <label>ID:</label>
+        <input type="text" readonly th:field="*{id}">
+    </div>
+    <div>
+        <label>Type:</label>
+        <input type="text" th:field="*{type}">
+    </div>
+    <div>
+        <label>Author:</label>
+        <input type="text" th:field="*{author}">
+    </div>
+    <div>
+        <label>Description:</label>
+        <input type="text" th:field="*{description}">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+<!--<footer th:replace="layout::footer"></footer>-->
+</body>
+</html>

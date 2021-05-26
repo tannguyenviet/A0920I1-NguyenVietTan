@@ -16,6 +16,7 @@
             <th>TYPE:</th>
             <th>Author</th>
             <th>Description</th>
+            <th>E-Commerce</th>
             <th>Edit</th>
             <th>Delete</th>
             <th>View</th>
@@ -27,6 +28,8 @@
             <td th:text="${blog.type}"></td>
             <td th:text="${blog.author}"></td>
             <td th:text="${blog.description}"></td>
+            <td th:text="${blog.geteCommerce().getName()}"></td>
+            <td th:text="${blog.geteCommerce().getBlog().get(0).getDescription()}+'hello tui ne'"></td>
             <td ><a th:href="@{/blog/edit/{id}(id=${blog.getId()})}">Edit</a></td>
             <td ><a th:href="@{/blog/delete/{id}(id=${blog.getId()})}">Delete</a></td>
             <td ><a th:href="@{/blog/view/{id}(id=${blog.getId()})}">View</a></td>

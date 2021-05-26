@@ -1,9 +1,12 @@
-package com.example.demo.model;
+package com.codegym.model;
 
 import javax.persistence.*;
 
 @Entity
+@NamedQuery(name = "Blog.findAllBLogByEcommerceId",
+        query = "SELECT b FROM Blog b  join ECommerce e where e.id =b.eCommerce.id ")
 public class Blog {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
