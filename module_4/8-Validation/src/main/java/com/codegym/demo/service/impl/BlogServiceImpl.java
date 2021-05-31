@@ -49,6 +49,14 @@ public class BlogServiceImpl  implements BlogService {
     public Page<Blog> findBlogByEcommerceId(int idEcommerce, Pageable pageable) {
         return blogRepository.findAllBlogByEmcommerceId(idEcommerce,pageable);
     }
+    @Override
+    public Page<Blog> findBlogsByEcommerceIdAndAuthor(int id,String key_search,Pageable pageable){
+        return blogRepository.findBlogsByEcommerceIdAndAuthor(id,key_search,pageable);
+    }
 
+    @Override
+    public Page<Blog> findBlogsOrderByTimeRelease(Pageable pageable){
+        return blogRepository.findBlogsOrderByTimeRelease(pageable);
+    }
 
 }

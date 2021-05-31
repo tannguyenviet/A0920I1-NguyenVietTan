@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/blog/layout::head">
+</head>
+<body>
+
+
+<h3>Welcome Blog</h3>
+<p>
+    <a th:href="@{/blog/create}">Create new Blog</a>
+</p>
+<form action="/blog" method="get" th:object="${ecommerces}">
+    <div>
+        <label>Author</label>
+        <input  th:value="${key_search}" type="text" name="key_search">ECommerce
+    </div>
+    <select name="ecomId">
+        <option  selected disabled hidden>Choose here</option>
+        <th:block th:each="ecom : ${ecommerces}">
+            <option th:value="${ecom.id}" th:text="${ecom.name}" >
+
+            </option>
+        </th:block>
+    </select>
+    <input type="submit" value="Search">
+</form>
+<form method="post" action="/blog/sort">
+    <div>
+        <label>Sort by time release</label>
+        <input type="submit" th:text="Sort">
+    </div>
+</form>
+<table id="blogs" th:object="${blogs}">
+    <thead>
+        <tr>
+            <th> ID:</th>
+            <th>TYPE:</th>
+            <th>Author</th>
+            <th>Description</th>
+            <th>E-Commerce</th>
+            <th>Date</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>View</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="blog,blogstart:${blogs}">
+            <td th:text="${blog.id}"></td>
+            <td th:text="${blog.type}"></td>
+            <td th:text="${blog.author}"></td>
+            <td th:text="${blog.description}"></td>
+            <td th:text="${blog.geteCommerce().getName()}"></td>
+            <td th:text="${blog.timeRelease}"></td>
+            <td ><a th:href="@{/blog/edit/{id}(id=${blog.getId()})}">Edit</a></td>
+            <td ><a th:href="@{/blog/delete/{id}(id=${blog.getId()})}">Delete</a></td>
+            <td ><a th:href="@{/blog/detail/{id}(id=${blog.getId()})}">Detail</a></td>
+        </tr>
+    </tbody>
+</table>
+<!--<div th:text="${key}"></div>-->
+<div>
+    <a th:href="@{'/blog/'(page=${blogs.number - 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${blogs.hasPrevious()}">Previous</a>
+    <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+    <a th:href="@{'/blog/'(page=${blogs.number + 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${blogs.hasNext()}">Next</a>
+</div>
+
+</body>
+</html>

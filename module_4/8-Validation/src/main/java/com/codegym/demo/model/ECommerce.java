@@ -2,14 +2,20 @@ package com.codegym.demo.model;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Entity
 public class ECommerce {
     @Id
+    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @NotBlank(message = "Bắt buộc phải nhập nhé bạn!")
+    @Size(min = 5,max = 10)
     private String name;
+    @NotBlank(message = "Bắt buộc phải nhập nhé bạn!")
     private String amountPeople;
     @OneToMany(mappedBy = "eCommerce",cascade = CascadeType.ALL)
     private List<Blog> blog;

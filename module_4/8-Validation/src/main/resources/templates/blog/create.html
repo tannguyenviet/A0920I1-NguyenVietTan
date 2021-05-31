@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/blog/layout::head">
+</head>
+<body>
+
+<h3>Create new Blog</h3>
+<form th:action="@{/blog/save}" th:object="${blog}" method="post">
+    <div>
+<!--        // Anotation @NotBlank-->
+<!--        <td th:if="${#fields.hasErrors('type')} " th:errors="*{type}">Type Error</td>-->
+        <label>Type:</label>
+        <input type="text" th:field="*{type}">
+    </div>
+    <div>
+        <td th:if="${#fields.hasErrors('author')} " th:errors="*{author}">Description Error</td>
+        <label>Author:</label>
+        <input type="text" th:field="*{author}">
+    </div>
+    <div>
+<!--        // Define Validator-->
+        <td th:if="${#fields.hasErrors('description')} " th:errors="*{description}">Description Error</td>
+        <label>Description:</label>
+        <input type="text" th:field="*{description}">
+    </div>
+
+    <div>
+        <label>Ecommerce:</label>
+        <select th:field="*{eCommerce}" >
+            <option value="" selected disabled hidden>Choose here</option>
+            <th:block th:each="ecom : ${ecommerces}">
+                <option th:value="${ecom.id}" th:text="${ecom.name}"  >
+                </option>
+            </th:block>
+        </select>
+
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+<!--<footer th:replace="layout::footer"></footer>-->
+</body>
+</html>
