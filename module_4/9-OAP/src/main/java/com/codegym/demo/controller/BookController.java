@@ -1,5 +1,7 @@
 package com.codegym.demo.controller;
 
+import com.codegym.demo.exception.DuplicateEmailException;
+import com.codegym.demo.exception.NotFoundCodeRentException;
 import com.codegym.demo.model.Book;
 import com.codegym.demo.model.BookRent;
 import com.codegym.demo.service.impl.BookRentServiceImpl;
@@ -7,10 +9,8 @@ import com.codegym.demo.service.impl.BookServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.jws.WebParam;
 
@@ -40,16 +40,28 @@ public class BookController {
         //Random code
         int code = (int)(Math.random() * ( 50000 - 10000 )) + 10000;
         bookRent.setCodeRent(code);
-        model.addAttribute("code",(code+""));
+        model.addAttribute("code",code);
         bookRentService.save(bookRent);
         return "book/code";
     }
     @PostMapping(value = "/book/return")
-    public String returnBook(@ModelAttribute int code){
+    public String bookReturn(@RequestParam int code) throws NotFoundCodeRentException {
         BookRent bookRent = bookRentService.findBookRentByCodeRent(code);
         if(bookRent==null){
-            throw
+            throw new NotFoundCodeRentException();
         }
+        Book book = bookRent.getBook();
+        book.setQuantity(book.getQuantity()+1);
+        bookService.save(book);
+        bookRentService.remove(bookRent.getId_bookRent());
         return "redirect:/book";
+    }
+//    @GetMapping(value = "/book/returnn")
+//    public String returnBook(@RequestAttribute int code)  {
+//
+//    }
+    @ExceptionHandler(NotFoundCodeRentException.class)
+    public ModelAndView showInputNotAcceptable() {
+        return new ModelAndView("customer/inputs-not-acceptable");
     }
 }

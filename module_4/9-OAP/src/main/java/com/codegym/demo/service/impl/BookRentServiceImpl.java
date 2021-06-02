@@ -40,7 +40,13 @@ public class BookRentServiceImpl {
     }
 
     public BookRent findBookRentByCodeRent(int code){
-        return bookRentRepository.findBookRentByCodeRent(code);
+         List<BookRent> bookRents = findAll();
+         for(BookRent bookRent:bookRents){
+             if(bookRent.getCodeRent()==code){
+                 return bookRent;
+             }
+         }
+         return null;
     }
 
 }

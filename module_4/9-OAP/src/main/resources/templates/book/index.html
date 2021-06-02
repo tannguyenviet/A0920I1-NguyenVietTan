@@ -39,9 +39,12 @@
     </tr>
     </tbody>
 </table>
-<form action="@{/book/return}" method="post">
-    <input th:text="" placeholder="input your code to return">
-    <input th:text="return" type="submit">
+<form th:action="@{/book/return}" method="post">
+    <div>
+        <p>Enter your code to return Book</p>
+        <input th:name="code" >
+    </div>
+    <input th:type="submit">
 </form>
 <footer ></footer>
 </body>
