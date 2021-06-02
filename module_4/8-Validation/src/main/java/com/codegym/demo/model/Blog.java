@@ -10,12 +10,8 @@ import javax.validation.constraints.Size;
 import java.sql.Date;
 
 @Entity
-@NamedQuery(name = "Blog.findAllBLogByEcommerceId",
-        query = "SELECT b FROM Blog b  join ECommerce e where e.id =b.eCommerce.id ")
 public class Blog implements Validator {
-
     @Id
-    
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 //    @NotBlank(message = "type can not be blank")

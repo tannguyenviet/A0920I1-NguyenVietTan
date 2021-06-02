@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/book/layout :: head">
+</head>
+<body>
+<h3 th:text="${code}"></h3>
+<p>
+    <a th:href="@{/book}">
+        Back to blog list
+    </a>
+</p>
+</body>
+</html>

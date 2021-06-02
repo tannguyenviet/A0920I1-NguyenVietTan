@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/blog/layout::head">
+</head>
+<body>
+
+
+<h3>Welcome USER</h3>
+<p>
+    <a th:href="@{/user/create}">Create new USER</a>
+</p>
+
+<table id="blogs" th:object="${users}">
+    <thead>
+    <tr>
+        <th> ID:</th>
+        <th>FIRST NAME:</th>
+        <th>LAST NAME:</th>
+        <th>PHONE:</th>
+        <th>AGE:</th>
+        <th>EMAIL:</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user:${users}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.firstName}"></td>
+        <td th:text="${user.lastName}"></td>
+        <td th:text="${user.phoneNumber}"></td>
+
+        <td th:text="${user.age}"></td>
+        <td th:text="${user.email}"></td>
+        <td ><a th:href="@{/user/edit/{id}(id=${user.getId()})}">Edit</a></td>
+        <td ><a th:href="@{/user/delete/{id}(id=${user.getId()})}">Delete</a></td>
+        <td ><a th:href="@{/user/detail/{id}(id=${user.getId()})}">Detail</a></td>
+    </tr>
+    </tbody>
+</table>
+<!--<div th:text="${key}"></div>-->
+
+
+</body>
+</html>

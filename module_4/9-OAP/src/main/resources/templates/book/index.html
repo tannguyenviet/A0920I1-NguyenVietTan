@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/book/layout :: head">
+</head>
+<body>
+<h3>BOOK</h3>
+<p>
+    <a th:href="@{/blog/create}">
+        Add new blog
+    </a>
+</p>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+
+    </div>
+</div>
+<table id = "books">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Quantity</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row,rowStat : ${books}">
+        <td th:text="${row.getId()}"></td>
+        <td th:text="${row.name}"></td>
+        <td th:text="${row.author}"></td>
+        <td th:text="${row.quantity}"></td>
+        <td><a th:href="@{/book/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/book/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:href="@{/book/{id}/view(id=${row.getId()})}">view</a></td>
+    </tr>
+    </tbody>
+</table>
+<form action="@{/book/return}" method="post">
+    <input th:text="" placeholder="input your code to return">
+    <input th:text="return" type="submit">
+</form>
+<footer ></footer>
+</body>
+</html>
