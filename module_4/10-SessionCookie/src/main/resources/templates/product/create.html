@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/product/layout::head">
+</head>
+<body>
+
+<h3>Create new Product</h3>
+<form th:action="@{/product/save}" method="post" enctype="multipart/form-data">
+    <div>
+<!--        // Anotation @NotBlank-->
+<!--        <td th:if="${#fields.hasErrors('type')} " th:errors="*{type}">Type Error</td>-->
+        <label>Name:</label>
+        <input type="text" name="name" >
+    </div>
+    <div>
+        <label>Price:</label>
+        <input type="text" name="price">
+    </div>
+    <div>
+        <label>Description:</label>
+        <input type="text" name="desc">
+    </div>
+    <div>
+        <label>ChooseFile</label>
+        <input type="file" name="file" >
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+
+</body>
+</html>

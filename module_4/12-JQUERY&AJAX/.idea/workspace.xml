@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="897037ff-c1ee-4977-9b5b-954b7d8ae633" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/controller/CounterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/model/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/service/FireBaseInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/service/Ipml/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/java/com/codegym/demo/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/resources/templates/cart/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/resources/templates/cart/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/resources/templates/cart/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/resources/templates/product/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/resources/templates/product/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/resources/templates/product/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/resources/templates/product/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-SessionCookie/src/main/resources/templates/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-WebService/src/main/java/com/codegym/demo/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-WebService/src/main/java/com/codegym/demo/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-WebService/src/main/java/com/codegym/demo/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-WebService/src/main/java/com/codegym/demo/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-WebService/src/main/java/com/codegym/demo/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/controller/SmartphoneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/model/ECommerce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/model/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/repository/ECommerceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/repository/SmartphoneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/service/SmartPhoneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/service/impl/ECommerceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/java/com/example/demo/service/impl/SmartphoneServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/resources/templates/blog/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/resources/templates/blog/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/resources/templates/blog/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/resources/templates/blog/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/resources/templates/blog/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/resources/templates/phones/all-phones.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-AJAX&amp;JQUERY/src/main/resources/templates/phones/new-phone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/demo-jpa/src/main/java/com/codegym/demojpa/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/demo-jpa/src/main/java/com/codegym/demojpa/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/out/production/module_2/FinalExam/data/XuatKhau.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_2/out/production/module_2/FinalExam/data/XuatKhau.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/out/production/module_2/newCaseStudy/Models/service/VillaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_2/out/production/module_2/newCaseStudy/Models/service/VillaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/FinalExam/data/XuatKhau.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_2/src/FinalExam/data/XuatKhau.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_2/src/newCaseStudy/Models/service/VillaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_2/src/newCaseStudy/Models/service/VillaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3/JSP/Bai12-JDPC&amp;CRUD/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3/JSP/Bai12-JDPC&amp;CRUD/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3/JSP/ServletCaseStudy/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3/JSP/ServletCaseStudy/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_5/.idea/module_5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_5/src/main/java/controllers/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_5/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_5/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_5/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_5/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/src/main/java/controllers/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_6/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_7/web/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_7/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_7/web/WEB-INF/web.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1tnuneJGRHUTjiHytYu3jTx6l7x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../12-AJAX&amp;JQUERY" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\VITA\CG\A0920I1-NguyenVietTan\module_4\12-JQUERY&amp;AJAX\src\main\resources\templates" />
+      <recent name="D:\VITA\CG\A0920I1-NguyenVietTan\module_4\12-JQUERY&amp;AJAX\src\main\java\com\example\demo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="12-JQUERY&amp;AJAX" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="897037ff-c1ee-4977-9b5b-954b7d8ae633" name="Default Changelist" comment="" />
+      <created>1623417342685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623417342685</updated>
+      <workItem from="1623417346733" duration="253000" />
+      <workItem from="1623517479670" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="501" y="205" key="FileChooserDialogImpl" timestamp="1623517507273">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="501" y="205" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1623517507273" />
+    <state width="1363" height="234" key="GridCell.Tab.0.bottom" timestamp="1623417600951">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1363" height="234" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1623417600951" />
+    <state width="1363" height="234" key="GridCell.Tab.0.center" timestamp="1623417600951">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1363" height="234" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1623417600951" />
+    <state width="1363" height="234" key="GridCell.Tab.0.left" timestamp="1623417600951">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1363" height="234" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1623417600951" />
+    <state width="1363" height="234" key="GridCell.Tab.0.right" timestamp="1623417600951">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1363" height="234" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1623417600951" />
+    <state width="1363" height="234" key="GridCell.Tab.1.bottom" timestamp="1623417600951">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1363" height="234" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1623417600951" />
+    <state width="1363" height="234" key="GridCell.Tab.1.center" timestamp="1623417600951">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1363" height="234" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1623417600951" />
+    <state width="1363" height="234" key="GridCell.Tab.1.left" timestamp="1623417600951">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1363" height="234" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1623417600951" />
+    <state width="1363" height="234" key="GridCell.Tab.1.right" timestamp="1623417600951">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1363" height="234" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1623417600951" />
+  </component>
+</project>

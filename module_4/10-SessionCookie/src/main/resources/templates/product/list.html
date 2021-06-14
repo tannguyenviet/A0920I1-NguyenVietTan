@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/product/layout::head">
+</head>
+<body>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+<h3>Welcome Product</h3>
+<p>
+    <a th:href="@{/product/create}">Create new Product</a>
+</p>
+<form action="/product" method="get" th:object="${products}">
+    <div>
+        <label>Author</label>
+        <input  th:value="${key_search}" type="text" name="key_search">ECommerce
+    </div>
+
+</form>
+<table id="products" th:object="${products}">
+    <thead>
+        <tr>
+            <th> ID:</th>
+            <th>NAME:</th>
+            <th>PRICE</th>
+            <th>Description</th>
+            <th>IMAGE</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>View</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="product,productstart:${products}">
+            <td th:text="${product.id}"></td>
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.price}"></td>
+            <td th:text="${product.description}"></td>
+            <td><img  th:src="'data:image/jpeg;base64,'+${product.image}" style="width: 100px;height: 100px "></td>
+
+            <td ><a th:href="@{/product/edit/{id}(id=${product.getId()})}">Edit</a></td>
+            <td ><a th:href="@{/product/delete/{id}(id=${product.getId()})}">Delete</a></td>
+            <td ><a th:href="@{/product/detail/{id}(id=${product.getId()})}">Detail</a></td>
+        </tr>
+    </tbody>
+</table>
+<!--<div th:text="${key}"></div>-->
+<!--<div>-->
+<!--    <a th:href="@{'/product/'(page=${products.number - 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${products.hasPrevious()}">Previous</a>-->
+<!--    <span th:text="${products.number + 1}"></span>/<span th:text="${products.totalPages}"></span>-->
+<!--    <a th:href="@{'/product/'(page=${products.number + 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${products.hasNext()}">Next</a>-->
+<!--</div>-->
+
+</body>
+</html>

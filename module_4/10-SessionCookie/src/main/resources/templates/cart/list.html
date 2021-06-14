@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/cart/layout::head">
+</head>
+<body>
+
+
+<h3>Welcome Product</h3>
+<p>
+    <a th:href="@{/cart/create}">Create new Product</a>
+</p>
+<form action="/cart" method="get" th:object="${carts}">
+    <div>
+        <label>Author</label>
+        <input  th:value="${key_search}" type="text" name="key_search">ECommerce
+    </div>
+
+</form>
+<table id="carts" th:object="${carts}">
+    <thead>
+        <tr>
+            <th> ID:</th>
+            <th>NAME:</th>
+            <th>PRICE</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Image</th>
+            <th>Image2</th>
+            <th>Delete</th>
+            <th>View</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="cart,cartstart:${carts.getCart()}">
+            <td th:text="${cart.key.id}"></td>
+            <td th:text="${cart.key.name}"></td>
+            <td th:text="${cart.key.price}"></td>
+            <td th:text="${cart.key.description}"></td>
+            <td th:text="${cart.value}"></td>
+            <td><img  th:src="'data:image/jpeg;base64,'+${cart.key.image}" style="width: 100px;height: 100px "></td>
+            <td><img  th:src="@{../../static/image/chiHa.PNG}"></td>
+            <td ><a th:href="@{/cart/delete/{id}(id=${cart.key.id})}">Delete</a></td>
+            <td ><a th:href="@{/cart/detail/{id}(id=${cart.key.id})}">Detail</a></td>
+        </tr>
+    </tbody>
+</table>
+<button><a th:href="@{/product}">Continue shopping</a></button>
+<!--<div th:text="${key}"></div>-->
+<!--<div>-->
+<!--    <a th:href="@{'/cart/'(page=${carts.number - 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${carts.hasPrevious()}">Previous</a>-->
+<!--    <span th:text="${carts.number + 1}"></span>/<span th:text="${carts.totalPages}"></span>-->
+<!--    <a th:href="@{'/cart/'(page=${carts.number + 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${carts.hasNext()}">Next</a>-->
+<!--</div>-->
+
+</body>
+</html>
