@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout::head">
+</head>
+<body>
+
+
+<h3>Welcome Customer</h3>
+<p>
+    <a th:href="@{/customer/create}">Create new Customer</a>
+</p>
+<form action="/customer" method="get" th:object="${ecommerces}">
+    <div>
+        <label>Author</label>
+        <input  th:value="${key_search}" type="text" name="key_search">ECommerce
+    </div>
+    <select name="ecomId">
+        <option  selected disabled hidden>Choose here</option>
+        <th:block th:each="ecom : ${ecommerces}">
+            <option th:value="${ecom.id}" th:text="${ecom.name}" >
+
+            </option>
+        </th:block>
+    </select>
+    <input type="submit" value="Search">
+</form>
+<form method="post" action="/customer/sort">
+    <div>
+        <label>Sort by time release</label>
+        <input type="submit" th:text="Sort">
+    </div>
+</form>
+<table id="entity" th:object="${customers}">
+    <thead>
+        <tr>
+            <th> ID:</th>
+            <th>Name:</th>
+            <th>Type</th>
+            <th>Birthday</th>
+            <th>Gender</th>
+            <th>IDCard</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="customer,customerstart:${customers}">
+            <td th:text="${customer.id}"></td>
+            <td th:text="${customer.name}"></td>
+            <td th:text="${customer.customerType.name}"></td>
+            <td th:text="${customer.birthday}"></td>
+            <td th:text="${customer.gender}"></td>
+            <td th:text="${customer.id_card}"></td>
+            <td th:text="${customer.phone}"></td>
+            <td th:text="${customer.address}"></td>
+            <td ><a th:href="@{/customer/edit/{id}(id=${customer.getId()})}">Edit</a></td>
+            <td ><a th:href="@{/customer/delete/{id}(id=${customer.getId()})}">Delete</a></td>
+            <td ><a th:href="@{/customer/detail/{id}(id=${customer.getId()})}">Detail</a></td>
+        </tr>
+    </tbody>
+</table>
+<!--<div th:text="${key}"></div>-->
+<!--<div>-->
+<!--    <a th:href="@{'/customer/'(page=${customers.number - 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${customers.hasPrevious()}">Previous</a>-->
+<!--    <span th:text="${customers.number + 1}"></span>/<span th:text="${customers.totalPages}"></span>-->
+<!--    <a th:href="@{'/customer/'(page=${customers.number + 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${customers.hasNext()}">Next</a>-->
+<!--</div>-->
+<div>
+    <a th:href="@{'/customer/'(page=${customers.number - 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${customers.hasPrevious()}">Previous</a>
+    <span th:text="${customers.number + 1}"></span>/<span th:text="${customers.totalPages}"></span>
+    <a th:href="@{'/customer/'(page=${customers.number + 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${customers.hasNext()}">Next</a>
+</div>
+
+</body>
+</html>

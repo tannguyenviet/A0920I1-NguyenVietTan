@@ -12,9 +12,9 @@
 <form action="/blog" method="get" th:object="${ecommerces}">
     <div>
         <label>Author</label>
-        <input  th:value="${key_search}" type="text" name="key_search">ECommerce
+        <input  id="key_search"  th:value="${key_search}" type="text" name="key_search">ECommerce
     </div>
-    <select name="ecomId">
+    <select  id="ecomId" name="ecomId">
         <option  selected disabled hidden>Choose here</option>
         <th:block th:each="ecom : ${ecommerces}">
             <option th:value="${ecom.id}" th:text="${ecom.name}" >
@@ -22,16 +22,20 @@
             </option>
         </th:block>
     </select>
-    <input type="submit" value="Search">
+<!--    <input id="search" type="submit" value="Search">-->
 </form>
-<form method="post" action="/blog/sort">
-    <div>
-        <label>Sort by time release</label>
-        <input type="submit" th:text="Sort">
-    </div>
-</form>
-<table id="blogs" th:object="${blogs}">
-    <thead>
+<button class="" id="search">Search</button>
+
+<!--<form method="post" action="/blog/sort">-->
+<!--    <div>-->
+<!--        <label>Sort by time release</label>-->
+<!--        <input type="submit" th:text="Sort">-->
+<!--    </div>-->
+<!--</form>-->
+
+<div id="body">
+    <table id="blogs" th:object="${blogs}">
+        <thead>
         <tr>
             <th> ID:</th>
             <th>TYPE:</th>
@@ -43,8 +47,8 @@
             <th>Delete</th>
             <th>View</th>
         </tr>
-    </thead>
-    <tbody>
+        </thead>
+        <tbody>
         <tr th:each="blog,blogstart:${blogs}">
             <td th:text="${blog.id}"></td>
             <td th:text="${blog.type}"></td>
@@ -56,14 +60,97 @@
             <td ><a th:href="@{/blog/delete/{id}(id=${blog.getId()})}">Delete</a></td>
             <td ><a th:href="@{/blog/detail/{id}(id=${blog.getId()})}">Detail</a></td>
         </tr>
-    </tbody>
-</table>
-<!--<div th:text="${key}"></div>-->
-<div>
-    <a th:href="@{'/blog/'(page=${blogs.number - 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${blogs.hasPrevious()}">Previous</a>
-    <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
-    <a th:href="@{'/blog/'(page=${blogs.number + 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${blogs.hasNext()}">Next</a>
+        </tbody>
+    </table>
+    <!--<div th:text="${key}"></div>-->
+    <div>
+        <button id="previous" th:if="${blogs.hasPrevious()}">Previous</button>
+        <span id="page" th:value="${blogs.number+1}" th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+        <button id="next" th:if="${blogs.hasNext()}">Xem Them</button>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#next').click(function () {
+                var val_key_search = $('#key_search').val();
+                var page = $('#page').text();
+                var ecomId = $('#ecomId').val();
+                if(ecomId==null){
+                    ecomId='';
+                }
+                $.ajax({
+                    type:'Get',
+                    data:{
+                        page:page,
+                        key_search: val_key_search,
+                        ecomId:ecomId,
+                    },
+                    url:'/blog',
+                    success :function (data) {
+                        var result = $('<div />').append(data).find('#body').html();
+                        $('#body').html(result);
+                    }
+                })
+            })
+            $('#previous').click(function () {
+                var val_key_search = $('#key_search').val();
+                var page = Number($('#page').text())-2;
+                var ecomId = $('#ecomId').val();
+                if(ecomId==null){
+                    ecomId='';
+                }
+                $.ajax({
+                    type:'Get',
+                    data:{
+                        page:page,
+                        key_search: val_key_search,
+                        ecomId:ecomId,
+                    },
+                    url:'/blog',
+                    success :function (data) {
+                        var result = $('<div />').append(data).find('#body').html();
+                        $('#body').html(result);
+                    }
+                })
+            })
+        })
+    </script>
 </div>
 
+
+<script>
+    $(document).ready(function () {
+        $('#search').click(function () {
+            var val_key_search = $('#key_search').val();
+            $.ajax({
+                type:'Get',
+                data:{
+                    key_search: val_key_search,
+                },
+                url:'/blog',
+                success :function (data) {
+                    var result = $('<div />').append(data).find('#body').html();
+                    $('#body').html(result);
+
+                }
+            })
+        })
+    })
+    // ajax phân trang
+
+
+</script>
+<script>
+    $(document).ready(function () {
+        $('#previous').click(function () {
+            alert("Hello");
+        })
+    });
+</script>
+
+<!--<script>-->
+<!--    $(document).ready(function () {-->
+<!--       alert("Hello");-->
+<!--    })-->
+<!--</script>-->
 </body>
 </html>
