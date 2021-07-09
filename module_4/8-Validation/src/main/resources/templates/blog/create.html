@@ -23,7 +23,11 @@
         <label>Description:</label>
         <input type="text" th:field="*{description}">
     </div>
-
+    <div>
+        <td th:if="${#fields.hasErrors('timeRelease')} " th:errors="*{timeRelease}">Description Error</td>
+        <label>Time Realease:</label>
+        <input type="date" th:field="*{timeRelease}">
+    </div>
     <div>
         <label>Ecommerce:</label>
         <select th:field="*{eCommerce}" >

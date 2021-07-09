@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/service/layout::head">
+</head>
+<body>
+
+<h3>Form Edit Service</h3>
+<form th:action="@{/service/edit}" th:object="${service}" method="post">
+    <div>
+        <label>Id:</label>
+        <input type="text" readonly th:field="*{id}">
+    </div>
+    <div>
+        <label>Name:</label>
+        <input type="text" th:field="*{name}">
+    </div>
+    <select th:field="*{serviceType}" >
+        <label>Service Member</label>
+        <option  selected disabled th:text="${service.serviceType.name} " th:value="${service.serviceType.id}" ></option>
+        <th:block th:each="type : ${serviceTypes}">
+            <option th:value="${type.id}" th:text="${type.name}" >
+            </option>
+        </th:block>
+    </select>
+    <select th:field="*{gender}">
+        <label>Gender</label>
+        <option  selected disabled th:text="${service.gender} " th:value="${service.gender}" ></option>
+        <option value="1">Male</option>
+        <option value="0">FeMale</option>
+    </select>
+    <div>
+        <label>Address:</label>
+        <input type="text" th:field="*{address}">
+    </div>
+    <div>
+        <label>Birth Day:</label>
+        <input type="text" th:field="*{birthday}">
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="text" th:field="*{email}">
+    </div>
+    <div>
+        <label>Phone:</label>
+        <input type="text" th:field="*{phone}">
+    </div>
+    <div>
+        <label>ID Card:</label>
+        <input type="text" th:field="*{id_card}">
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+<!--<footer th:replace="layout::footer"></footer>-->
+</body>
+</html>

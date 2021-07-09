@@ -48,7 +48,7 @@
             <th>View</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody id="tbody">
         <tr th:each="blog,blogstart:${blogs}">
             <td th:text="${blog.id}"></td>
             <td th:text="${blog.type}"></td>
@@ -63,57 +63,68 @@
         </tbody>
     </table>
     <!--<div th:text="${key}"></div>-->
-    <div>
-        <button id="previous" th:if="${blogs.hasPrevious()}">Previous</button>
-        <span id="page" th:value="${blogs.number+1}" th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
-        <button id="next" th:if="${blogs.hasNext()}">Xem Them</button>
+    <div id="pageable" >
+        <div >
+            <button id="previous" th:if="${blogs.hasPrevious()}">Previous</button>
+            <span id="page" th:value="${blogs.number+1}" th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+            <button id="next" th:if="${blogs.hasNext()}">Xem Them</button>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('#next').click(function () {
+                    var val_key_search = $('#key_search').val();
+                    var page = $('#page').text();
+                    var ecomId = $('#ecomId').val();
+                    if(ecomId==null){
+                        ecomId='';
+                    }
+                    $.ajax({
+                        type:'Get',
+                        data:{
+                            page:page,
+                            key_search: val_key_search,
+                            ecomId:ecomId,
+                        },
+                        url:'/blog',
+                        success :function (data) {
+                            var result = $('<div />').append(data).find('#tbody').html();
+
+                            // var result = $('<div />').append(data).find('#body').html();
+                            // $('#body').html(result);
+                            console.log(result);
+                            $('#tbody').append(result);
+                            var resultPage = $('<div />').append(data).find('#pageable').html();
+                            $('#pageable').html(resultPage);
+
+                        }
+                    })
+                })
+                $('#previous').click(function () {
+                    var val_key_search = $('#key_search').val();
+                    var page = Number($('#page').text())-2;
+                    var ecomId = $('#ecomId').val();
+                    if(ecomId==null){
+                        ecomId='';
+                    }
+                    $.ajax({
+                        type:'Get',
+                        data:{
+                            page:page,
+                            key_search: val_key_search,
+                            ecomId:ecomId,
+                        },
+                        url:'/blog',
+                        success :function (data) {
+                            var result = $('<div />').append(data).find('#body').html();
+
+                            $('#body').html(result);
+                        }
+                    })
+                })
+            })
+        </script>
     </div>
-    <script>
-        $(document).ready(function () {
-            $('#next').click(function () {
-                var val_key_search = $('#key_search').val();
-                var page = $('#page').text();
-                var ecomId = $('#ecomId').val();
-                if(ecomId==null){
-                    ecomId='';
-                }
-                $.ajax({
-                    type:'Get',
-                    data:{
-                        page:page,
-                        key_search: val_key_search,
-                        ecomId:ecomId,
-                    },
-                    url:'/blog',
-                    success :function (data) {
-                        var result = $('<div />').append(data).find('#body').html();
-                        $('#body').html(result);
-                    }
-                })
-            })
-            $('#previous').click(function () {
-                var val_key_search = $('#key_search').val();
-                var page = Number($('#page').text())-2;
-                var ecomId = $('#ecomId').val();
-                if(ecomId==null){
-                    ecomId='';
-                }
-                $.ajax({
-                    type:'Get',
-                    data:{
-                        page:page,
-                        key_search: val_key_search,
-                        ecomId:ecomId,
-                    },
-                    url:'/blog',
-                    success :function (data) {
-                        var result = $('<div />').append(data).find('#body').html();
-                        $('#body').html(result);
-                    }
-                })
-            })
-        })
-    </script>
+
 </div>
 
 

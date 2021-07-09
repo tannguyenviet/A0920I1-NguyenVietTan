@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/customer/layout::head">
+<head th:replace="/home/index::head">
 </head>
-<body>
+<body class="container-fluid">
 
-
-<h3>Welcome Customer</h3>
+<div th:replace="/home/index::nav">HI</div>
+<div th:class="text-center"><h3><strong>Welcome Customer</strong></h3></div>
 <p>
-    <a th:href="@{/customer/create}">Create new Customer</a>
 </p>
-<form action="/customer" method="get" th:object="${ecommerces}">
-    <div>
-        <label>Author</label>
-        <input  th:value="${key_search}" type="text" name="key_search">ECommerce
+<p style="color: #4CAF50" th:if="${message}" th:text="${message}"></p>
+<form action="/customer" method="get" >
+    <div class="d-flex align-items-center mb-3 justify-content-between">
+        <a class="btn btn-success" th:href="@{/customer/create}">Create new Customer </a>
+        <div class="d-flex" >
+            <label class="ml-3">Name</label>
+            <input  class="ml-3 " th:value="${key_search}" type="text" name="key_search">
+            <label class="ml-3">Customer Member</label>
+            <select class="ml-3" name="typeId">
+                <option  selected disabled hidden>Choose here</option>
+                <th:block th:each="type : ${customerTypes}">
+                    <option th:value="${type.id}" th:text="${type.name}" >
+                    </option>
+                </th:block>
+            </select>
+            <button th:class="ml-3"  class="btn btn-info" type="submit" >Search</button>
+        </div>
     </div>
-    <select name="ecomId">
-        <option  selected disabled hidden>Choose here</option>
-        <th:block th:each="ecom : ${ecommerces}">
-            <option th:value="${ecom.id}" th:text="${ecom.name}" >
 
-            </option>
-        </th:block>
-    </select>
-    <input type="submit" value="Search">
 </form>
-<form method="post" action="/customer/sort">
-    <div>
-        <label>Sort by time release</label>
-        <input type="submit" th:text="Sort">
-    </div>
-</form>
-<table id="entity" th:object="${customers}">
+<!--<form method="post" action="/customer/sort">-->
+<!--    <div>-->
+<!--        <label>Sort by time release</label>-->
+<!--        <input type="submit" th:text="Sort">-->
+<!--    </div>-->
+<!--</form>-->
+<table class="table table-striped" id="entity" th:object="${customers}">
     <thead>
         <tr>
-            <th> ID:</th>
-            <th>Name:</th>
-            <th>Type</th>
-            <th>Birthday</th>
-            <th>Gender</th>
-            <th>IDCard</th>
-            <th>Phone</th>
-            <th>Address</th>
-            <th>Edit</th>
-            <th>Delete</th>
-            <th>Detail</th>
+            <th scope="col"> STT:</th>
+            <th scope="col"> ID:</th>
+            <th scope="col">Name:</th>
+            <th scope="col">Type</th>
+            <th scope="col">Birthday</th>
+            <th scope="col">Gender</th>
+            <th scope="col">IDCard</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Address</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Detail</th>
         </tr>
     </thead>
     <tbody>
         <tr th:each="customer,customerstart:${customers}">
+            <td th:text="${customerstart.index+page.getPageNumber()*page.getPageSize()}"></td>
             <td th:text="${customer.id}"></td>
             <td th:text="${customer.name}"></td>
             <td th:text="${customer.customerType.name}"></td>
             <td th:text="${customer.birthday}"></td>
-            <td th:text="${customer.gender}"></td>
+            <td th:if="${customer.gender=='1'}">Male</td>
+            <td th:if="${customer.gender=='0'}">Female</td>
             <td th:text="${customer.id_card}"></td>
             <td th:text="${customer.phone}"></td>
             <td th:text="${customer.address}"></td>
-            <td ><a th:href="@{/customer/edit/{id}(id=${customer.getId()})}">Edit</a></td>
-            <td ><a th:href="@{/customer/delete/{id}(id=${customer.getId()})}">Delete</a></td>
-            <td ><a th:href="@{/customer/detail/{id}(id=${customer.getId()})}">Detail</a></td>
+            <td ><a class="btn btn-outline-primary" th:href="@{/customer/edit/{id}(id=${customer.getId()})}">Edit</a></td>
+            <td ><a  class="btn btn-outline-danger"th:href="@{/customer/delete/{id}(id=${customer.getId()})}">Delete</a></td>
+            <td ><a class="btn btn-outline-info" th:href="@{/customer/detail/{id}(id=${customer.getId()})}">Detail</a></td>
         </tr>
     </tbody>
 </table>
@@ -68,11 +75,12 @@
 <!--    <span th:text="${customers.number + 1}"></span>/<span th:text="${customers.totalPages}"></span>-->
 <!--    <a th:href="@{'/customer/'(page=${customers.number + 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${customers.hasNext()}">Next</a>-->
 <!--</div>-->
-<div>
-    <a th:href="@{'/customer/'(page=${customers.number - 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${customers.hasPrevious()}">Previous</a>
-    <span th:text="${customers.number + 1}"></span>/<span th:text="${customers.totalPages}"></span>
-    <a th:href="@{'/customer/'(page=${customers.number + 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${customers.hasNext()}">Next</a>
-</div>
 
+<div>
+    <a th:href="@{'/customer/'(page=${customers.number - 1}, key_search=${key_search},typeId=${typeId})}" th:if="${customers.hasPrevious()}">Previous</a>
+    <span th:text="${customers.number + 1}"></span>/<span th:text="${customers.totalPages}"></span>
+    <a th:href="@{'/customer/'(page=${customers.number + 1}, key_search=${key_search},typeId=${typeId})}" th:if="${customers.hasNext()}">Next</a>
+</div>
+<footer th:replace="/home/index::footer"></footer>
 </body>
 </html>

@@ -3,9 +3,9 @@ package com.codegym.demo.controller;
 import com.codegym.demo.model.Blog;
 import com.codegym.demo.service.ECommerceService;
 import com.codegym.demo.service.impl.BlogServiceImpl;
-import com.sun.tracing.dtrace.NameAttributes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -89,11 +89,17 @@ public class BlogController {
     }
     @PostMapping(value = "/blog/save")
     public  String saveBlog(@Validated @ModelAttribute("blog") Blog blog, BindingResult bindingResult, Model model){
+
         new Blog().validate(blog,bindingResult);
         if(bindingResult.hasFieldErrors()){
+//            System.out.println(blog.getTimeRelease().toString());
+            if(blog.getTimeRelease()==null){
+                bindingResult.rejectValue("timeRelease","timerelease.form2");
+            }
             model.addAttribute("blog",blog);
             model.addAttribute("ecommerces",eCommerceService.findAllECommerce());
 //            model.addAttribute()
+
             return "/blog/create";
         }
         else{

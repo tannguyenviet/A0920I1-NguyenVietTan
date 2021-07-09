@@ -1,11 +1,22 @@
 package com.example.demo.model;
 
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Customer {
+public class Customer implements Validator {
+
+    private static final String ID_REGEX =   "KH-\\d{4}";
+    private static final String PHONE_REGEX="090\\d{7}|091\\d{7}|\\(84\\)\\+91\\d{7}|\\(84\\)\\+90\\d{7}";
+    private static final String ID_CARD_REGEX="\\d{9}|\\d{12}";
+    private static final String EMAIL_REGEX =   "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
+    private static final String NUMBER_REGEX ="^[1-9]\\d*$";
+    private static final String NUMBER_DECIMAL ="^(\\d*\\.)?\\d+$";
+    private static final String BIRTHDAY_REGEX="([12]\\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01]))";
     @Id
     String id;
     @ManyToOne(targetEntity = CustomerType.class)
@@ -103,5 +114,51 @@ public class Customer {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public boolean supports(Class<?> clazz) {
+        return Customer.class.isAssignableFrom(clazz);
+    }
+
+    @Override
+    public void validate(Object target, Errors errors) {
+        Customer customer = (Customer) target;
+        String id= customer.getId();
+        String phone = customer.getPhone();
+        String idCard = customer.getId_card();
+        String email = customer.getEmail();
+        String birthday = customer.getBirthday();
+//        if(!id.matches())
+//        String firstName = customer.getFirstName();
+//        String lastName = customer.getLastName();
+//        String phone = customer.getPhoneNumber();
+//        int age = customer.getAge();
+//        String email = customer.getEmail();
+//
+//        if (firstName.length()<5||firstName.length()>45){
+//            errors.rejectValue("firstName", "name.length");
+//        }
+//        if (lastName.length()<5||lastName.length()>45){
+//            errors.rejectValue("lastName", "name.length");
+//        }
+
+        if(!phone.matches(PHONE_REGEX)){
+            errors.rejectValue("phone","phone.form");
+        }
+        if(!idCard.matches(ID_CARD_REGEX)){
+            errors.rejectValue("id_card","idCard.form");
+        }
+        if(!email.matches(EMAIL_REGEX)){
+            errors.rejectValue("email","email.form");
+        }
+        if(!id.matches(ID_REGEX)){
+            errors.rejectValue("id","id.form");
+        }
+        System.out.println("birthday: "+birthday);
+        if(!birthday.matches(BIRTHDAY_REGEX)){
+            errors.rejectValue("birthday","day.form");
+        }
+
     }
 }

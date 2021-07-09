@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/service/layout::head">
+</head>
+<body>
+<h3>Create new Service</h3>
+<form th:action="@{/service/save}" th:object="${service}" method="post">
+    <div>
+        <label>ID:</label>
+        <input type="text" th:field="*{id}">
+    </div>`
+    <div>
+<!--        <td th:if="${#fields.hasErrors('author')} " th:errors="*{author}">Description Error</td>-->
+        <label>Name:</label>
+        <input type="text" th:field="*{name}">
+    </div>
+    <div>
+        <label>Area:</label>
+        <input type="text" th:field="*{area}">
+    </div>
+    <div>
+        <label>Number Of Floors:</label>
+        <input type="text" th:field="*{numFloor}">
+    </div>
+    <div>
+        <label>Pool Area:</label>
+        <input type="text" th:field="*{poolArea}">
+    </div>
+    <div>
+        <label>Max People:</label>
+        <input type="text" th:field="*{maxPeople}">
+    </div>
+    <div>
+        <label>Standard Room:</label>
+        <input type="text" th:field="*{standardRoom}">
+    </div>
+    <div>
+        <label>Description Other Convenient:</label>
+        <input type="text" th:field="*{desOtherConvenient}">
+    </div>
+    <div>
+        <label>Cost:</label>
+        <input type="text" th:field="*{cost}">
+    </div>
+
+    <div>
+        <label>Type Service:</label>
+        <select th:field="*{serviceType}" >
+            <option value="" selected disabled hidden>Choose here</option>
+            <th:block th:each="type : ${serviceTypes}">
+                <option th:value="${type.id}" th:text="${type.name}"  >
+                </option>
+            </th:block>
+        </select>
+    </div>
+    <div>
+        <label>Rent Type:</label>
+        <select th:field="*{rentType}" >
+            <option value="" selected disabled hidden>Choose here</option>
+            <th:block th:each="type : ${rentTypes}">
+                <option th:value="${type.id}" th:text="${type.name}"  >
+                </option>
+            </th:block>
+        </select>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+<!--<footer th:replace="layout::footer"></footer>-->
+</body>
+</html>

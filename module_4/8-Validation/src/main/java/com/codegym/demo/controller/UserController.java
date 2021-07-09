@@ -18,6 +18,7 @@ public class UserController {
     UserServiceImpl userService;
     @GetMapping(value = "/user")
     public String viewList(Model model){
+
         model.addAttribute("users",userService.findAllUser());
         return "user/list";
     }
