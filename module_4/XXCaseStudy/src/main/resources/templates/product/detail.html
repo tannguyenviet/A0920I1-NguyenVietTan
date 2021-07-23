@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout::head">
+</head>
+<body>
+
+<h3>Form Edit Customer</h3>
+<form  th:object="${customer}" method="post">
+    <div>
+        <label>ID:</label>
+        <label type="text"  th:text="${customer.id}" ></label>
+
+    </div>
+    <div>
+        <label>Type:</label>
+        <label type="text" th:text="${customer.type}"></label>
+    </div>
+    <div>
+        <label>Author:</label>
+        <label type="text" th:text="${customer.author}"></label>
+    </div>
+    <div>
+        <label>Description:</label>
+        <label type="text" th:text="${customer.description}"></label>
+    </div>
+    <div>
+        <label>E Commerce:</label>
+        <label type="text" th:text="${customer.eCommerce.name}"></label>
+    </div>
+    <div>
+        <label>Amount User:</label>
+        <label type="text" th:text="${customer.eCommerce.amountPeople}"></label>
+    </div>
+    <button><a th:href="@{/customer}">Back to home</a></button>
+</form>
+
+
+<!--<footer th:replace="layout::footer"></footer>-->
+</body>
+</html>

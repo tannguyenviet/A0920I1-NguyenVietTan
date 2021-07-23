@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/home/index::head">
+</head>
+<body class="container-fluid">
+<div th:replace="/home/index::nav"></div>
+<h3>Create new Customer</h3>
+<form th:action="@{/customer/save}" th:object="${customer}" method="post">
+    <div class="form-group record">
+        <label>ID:</label>
+        <input class="form-control" type="text" th:field="*{id}">
+        <label class="errorField" th:if="${#fields.hasErrors('id')} " th:errors="*{id}">Description Error</label>
+
+    </div>
+
+    <div class="form-group record">
+        <label>Name:</label>
+        <input class="form-control" type="text" th:field="*{name}">
+    </div>
+    <div class="form-group record">
+        <label>ID Card:</label>
+        <input class="form-control"type="text" th:field="*{id_card}">
+        <label class="errorField" th:if="${#fields.hasErrors('id_card')} " th:errors="*{id_card}">Description Error</label>
+
+    </div>
+    <div class="form-group record">
+        <label>Phone:</label>
+        <input class="form-control" type="text" th:field="*{phone}">
+        <label class="errorField" th:if="${#fields.hasErrors('phone')} " th:errors="*{phone}">Description Error</label>
+
+    </div>
+    <div class="form-group record">
+        <label>Email:</label>
+        <input class="form-control" type="text" th:field="*{email}">
+        <label class="errorField " th:if="${#fields.hasErrors('email')} " th:errors="*{email}">Description Error</label>
+
+    </div>
+    <div class="form-group record">
+        <label>Address:</label>
+        <input class="form-control" type="text" th:field="*{address}">
+    </div>
+    <div class="form-group">
+        <label>Birth Day:</label>
+        <input  class="form-control "type="date" th:field="*{birthday}">
+        <label class="errorField " th:if="${#fields.hasErrors('birthday')} " th:errors="*{birthday}">Description Error</label>
+    </div>
+    <div class="form-group record">
+        <label>Gender:</label>
+        <input class="form-control" type="text" th:field="*{gender}">
+    </div>
+    <div class="form-group record">
+        <label>Type Customer:</label>
+        <select class="form-control"4 th:field="*{customerType}" >
+            <option value="" selected disabled hidden>Choose here</option>
+            <th:block th:each="type : ${customerTypes}">
+                <option th:value="${type.id}" th:text="${type.name}"  >
+                </option>
+            </th:block>
+        </select>
+
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+<!--<footer th:replace="layout::footer"></footer>-->
+</body>
+</html>

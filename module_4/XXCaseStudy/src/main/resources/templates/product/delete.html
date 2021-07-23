@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/customer/layout::head">
+</head>
+<body>
+
+<h3>Form Edit Customer</h3>
+<form th:action="${'/customer/delete/'+customer.id}"  th:object="${customer}" method="post">
+    <div>
+        <label>ID:</label>
+        <label type="text"  th:text="${customer.id}" ></label>
+
+    </div>
+    <div>
+        <label>Name:</label>
+        <label type="text" th:text="${customer.name}"></label>
+    </div>
+    <div>
+        <label>Type:</label>
+        <label type="text" th:text="${customer.customerType.name}"> </label>
+    </div>
+
+    <div>
+        <label>E Commerce:</label>
+        <label type="text" th:text="${customer.address}"></label>
+    </div>
+    <div>
+        <label>E Commerce:</label>
+        <label type="text" th:text="${customer.phone}"></label>
+    </div>
+    <button type="submit">Delete</button>
+</form>
+<button><a th:href="@{/customer}">Back to home</a></button>
+
+
+<!--<footer th:replace="layout::footer"></footer>-->
+</body>
+</html>

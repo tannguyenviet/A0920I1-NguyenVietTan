@@ -1,0 +1,20 @@
+<h2>Font size editor</h2>
+
+<div>
+  <label>Enter font size (px):</label>
+  <input type="number" [value]="fontSize" (change)="onChange($event.target.value)">
+</div>
+<p class="output" [style.fontSize.px]="fontSize">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque nostrum quibusdam. Inventore quibusdam debitis, tempore error voluptatem explicabo ipsum?
+</p>
+
+<p> Student ID : {{student.id}}</p>
+<p> Student Name : {{student.name}}</p>
+<p> Student Age : {{student.age}}</p>
+<p> Student Mark : {{student.mark}}</p>
+<p> Student AVATAR : {{student.avatar}}</p>
+<br>
+<label>Jugde Mark: </label>
+<input type="number" (change)="changeMarkForStudent($event.target.value)">
+<!-- Han Che Su Dung Cai 2 Chieu -->
+<!-- <input type="number"[(ngModel)]="student.mark"> -->

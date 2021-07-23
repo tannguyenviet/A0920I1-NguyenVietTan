@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/home/index::head">
+</head>
+<body class="container-fluid">
+
+<div th:replace="/home/index::nav">HI</div>
+<div th:class="text-center"><h3><strong>Welcome Student</strong></h3></div>
+<p style="color: #4CAF50" th:if="${message}" th:text="${message}"></p>
+<form action="/student" method="get" >
+    <div class="d-flex align-items-center mb-3 justify-content-between">
+        <a class="btn btn-success" th:href="@{/student/create}">Create new Student </a>
+        <div class="d-flex" >
+            <label class="ml-3">Name</label>
+            <input  class="ml-3 " th:value="${key_search}" type="text" name="key_search">
+            <label class="ml-3">Student Member</label>
+            <select class="ml-3" name="typeId">
+                <option  selected disabled hidden>Choose here</option>
+                <th:block th:each="type : ${studentTypes}">
+                    <option th:value="${type.id}" th:text="${type.name}" >
+                    </option>
+                </th:block>
+            </select>
+            <button th:class="ml-3"  class="btn btn-info" type="submit" >Search</button>
+        </div>
+    </div>
+
+</form>
+<!--<form method="post" action="/student/sort">-->
+<!--    <div>-->
+<!--        <label>Sort by time release</label>-->
+<!--        <input type="submit" th:text="Sort">-->
+<!--    </div>-->
+<!--</form>-->
+<table class="table table-striped" id="entity" th:object="${students}">
+    <thead>
+        <tr>
+            <th scope="col"> STT:</th>
+            <th scope="col"> ID:</th>
+            <th scope="col">Name:</th>
+            <th scope="col">Type</th>
+            <th scope="col">Birthday</th>
+            <th scope="col">Gender</th>
+            <th scope="col">IDCard</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Address</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="student,studentstart:${students}">
+            <td th:text="${studentstart.index+page.getPageNumber()*page.getPageSize()}"></td>
+            <td th:text="${student.id}"></td>
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.studentType.name}"></td>
+<!--            <td th:text="${student.birthday}"></td>-->
+<!--            <td th:if="${student.gender=='1'}">Male</td>-->
+<!--            <td th:if="${student.gender=='0'}">Female</td>-->
+<!--            <td th:text="${student.id_card}"></td>-->
+<!--            <td th:text="${student.phone}"></td>-->
+<!--            <td th:text="${student.address}"></td>-->
+            <td ><a class="btn btn-outline-primary" th:href="@{/student/edit/{id}(id=${student.getId()})}">Edit</a></td>
+<!--            <td ><a class="btn btn-outline-danger" th:onclick="'|confirmDelete('+${student.id}+')|'">Delete</a></td>-->
+            <td ><a class="btn btn-outline-danger" th:attr="onclick=|confirmDelete('${student.getId()}')|">Delete</a></td>
+            <td ><a class="btn btn-outline-info" th:href="@{/student/detail/{id}(id=${student.getId()})}">Detail</a></td>
+<!--            'javascript:confirmDelete(' + ${student.getId()} + ')'-->
+         </tr>
+    </tbody>
+</table>
+<!--<div th:text="${key}"></div>-->
+<!--<div>-->
+<!--    <a th:href="@{'/student/'(page=${students.number - 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${students.hasPrevious()}">Previous</a>-->
+<!--    <span th:text="${students.number + 1}"></span>/<span th:text="${students.totalPages}"></span>-->
+<!--    <a th:href="@{'/student/'(page=${students.number + 1}, key_search=${key_search},ecomId=${ecomId})}" th:if="${students.hasNext()}">Next</a>-->
+<!--</div>-->
+
+<div>
+    <a th:href="@{'/student/'(page=${students.number - 1}, key_search=${key_search},typeId=${typeId})}" th:if="${students.hasPrevious()}">Previous</a>
+    <span th:text="${students.number + 1}"></span>/<span th:text="${students.totalPages}"></span>
+    <a th:href="@{'/student/'(page=${students.number + 1}, key_search=${key_search},typeId=${typeId})}" th:if="${students.hasNext()}">Next</a>
+</div>
+<footer  th:replace="/home/index::footer"></footer>
+</body>
+<script>
+
+    function confirmDelete(id){
+        if (confirm("Are you sure to delete Record Id:"+id+" ?")) {
+            alert("Confirm");
+            $.ajax({
+                type: 'GET',
+                data: {
+                    id: id,
+                },
+                url: '/student/delete',
+                success: (data) => {
+                    alert("Vao Data");
+                    var result = $('<div />').append(data).find('#entity').html();
+
+                    $('#entity').html(result);
+                    // $("#entity").html(data)
+                }
+            });
+        }
+    }
+
+</script>
+
+</html>
