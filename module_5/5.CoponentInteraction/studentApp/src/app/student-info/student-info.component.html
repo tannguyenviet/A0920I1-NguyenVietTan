@@ -1,0 +1,38 @@
+<div class="card" style="width: 18rem;">
+  <img width="230" height="300" class="card-img-top" src="https://pdp.edu.vn/wp-content/uploads/2021/05/hinh-anh-avatar-de-thuong.jpg" alt="Card image cap">
+  <ul class="list-group list-group-flush">
+    <li  class="list-group-item">
+      <div class="d-flex ">
+        <div class="">ID:</div>
+        <div class="ml-auto">{{student.id}}</div>
+      </div>
+    </li>
+    <li  class="list-group-item">
+      <div class="d-flex ">
+        <div class="">Name:</div>
+        <div class="ml-auto">{{student.name}}</div>
+      </div>
+    </li>
+
+    <li  class="list-group-item">
+      <div class="d-flex ">
+        <div class="">age:</div>
+        <div class="ml-auto">{{student.age}}</div>
+      </div>
+    </li>
+
+    <li  class="list-group-item">
+      <div class="d-flex ">
+        <div class="">Mark:</div>
+        <div class="ml-auto">{{student.mark}}</div>
+      </div>
+    </li>
+
+
+  </ul>
+  <div class="card-body">
+    <label>Change</label>
+    <input (change)="changeStudentMark($event.target.value)" href="#" class="card-link">
+  </div>
+</div>
+  <button (click)="changeStudentMarkInList(student.id,student.mark)" class="btn btn-primary" >Change</button>
